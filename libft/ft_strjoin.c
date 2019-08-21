@@ -29,5 +29,6 @@ char	*ft_strjoin(char const *s1, char const *s2)
 			*temp++ = (char)*s2++;
 		*temp = '\0';
 	}
+	ft_memdel((void**)&s1);
 	return (res);
 }

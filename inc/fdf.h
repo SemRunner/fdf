@@ -22,11 +22,11 @@
 # define HIGHT 1200
 # define ESC 53
 # define PUT 49
-# define B_SIZE 50000
 
 typedef struct	s_point
 {
 	double		number;
+	double		color;
 	int			value;
 	int 		len;
 }				t_point;
@@ -37,10 +37,12 @@ typedef struct	s_fdf
 	void		*win_ptr;
 	void		*img_ptr;
 	int			*mlx_map;
-	char		buff[B_SIZE];
-	char		*source_map;
+	char		*buff;
 	int			size_line;
+	int 		line_count;
 	int			endian;
+	int 		tmp_len;
+	int			fd;
 	t_point		**points;
 }				t_fdf;
 

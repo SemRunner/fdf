@@ -18,7 +18,10 @@ void	*ft_clear_table(char **table, int i)
 
 	index = 0;
 	while (index < i)
-		free(table[i++]);
-	free(table);
+	{
+		//ft_memdel((void**)&table[index++]);
+		table[index++] = NULL;
+	}
+	//ft_memdel((void**)&table);
 	return (0);
 }
