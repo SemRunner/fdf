@@ -12,7 +12,19 @@
 
 #include "../inc/fdf.h"
 
+void	get_black(t_fdf *fdf)
+{
+	int	i;
+	int len;
+
+	i = -1;
+	len = WIDTH * HIGHT;
+	while (++i < len)
+		fdf->mlx_map[i] = 0x000000;
+}
+
 void	draw_map(t_fdf *fdf)
 {
+	get_black(fdf);
 
 }

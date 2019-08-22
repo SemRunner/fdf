@@ -26,18 +26,6 @@ unistd.h
 
 /Users/smight/Desktop/fdf_new/minilibx_macos/mlx.h
 
-/Users/smight/Desktop/fdf_new/src/draw.c
-../inc/fdf.h
-/Users/smight/Desktop/fdf_new/inc/fdf.h
-
-/Users/smight/Desktop/fdf_new/src/loop.c
-../inc/fdf.h
-/Users/smight/Desktop/fdf_new/inc/fdf.h
-
-/Users/smight/Desktop/fdf_new/src/main.c
-../inc/fdf.h
-/Users/smight/Desktop/fdf_new/inc/fdf.h
-
 /Users/smight/Desktop/fdf_new/src/read_map.c
 ../inc/fdf.h
 /Users/smight/Desktop/fdf_new/inc/fdf.h

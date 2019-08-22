@@ -21,13 +21,15 @@
 # define WIDTH 2000
 # define HIGHT 1200
 # define ESC 53
-# define PUT 49
+# define PUT 76
 
 typedef struct	s_point
 {
 	double		number;
 	double		color;
-	int			value;
+	int			x;
+	int 		y;
+	int 		z;
 	int 		len;
 	int			line_len;
 }				t_point;
@@ -42,7 +44,7 @@ typedef struct	s_fdf
 	int			size_line;
 	int 		line_count;
 	int			endian;
-	int 		tmp_len;
+	int 		column_count;
 	int			fd;
 	t_point		**points;
 }				t_fdf;

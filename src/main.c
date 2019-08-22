@@ -48,7 +48,7 @@ int		main(int c, char **v)
 		return (error(2));
 	initialize_mlx(&fdf, v[1]);
 	loop(&fdf);
-	//end_mlx(&fdf);
+	end_mlx(&fdf);
 	//ft_memdel((void**)&fdf.source_map);
 	return (0);
 }

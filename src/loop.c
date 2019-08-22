@@ -27,6 +27,7 @@ int		deal_key(int key, void *param)
 
 void	loop(t_fdf *fdf)
 {
+	draw_map(fdf);
 	mlx_hook(fdf->win_ptr, 2, 0, deal_key, fdf);//ловлю с клавы esc
 	mlx_loop(fdf->mlx_ptr);
 }
