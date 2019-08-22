@@ -2,7 +2,8 @@ NAME = ./fdf
 
 FILES = main.c \
         read_map.c \
-        loop.c
+        loop.c \
+        draw.c
 
 SRC = $(addprefix src/,$(FILES))
 

@@ -13,16 +13,7 @@
   <component name="ChangeListManager">
     <list default="true" id="84bee0d8-167f-4b09-bca5-b57adc5479d3" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/fdf_new.dir/C.includecache" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/fdf_new.dir/C.includecache" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/fdf_new.dir/src/loop.c.o" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/fdf_new.dir/src/main.c.o" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/fdf_new.dir/src/main.c.o" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/fdf_new.dir/src/read_map.c.o" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/fdf_new" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/fdf_new" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/inc/fdf.h" beforeDir="false" afterPath="$PROJECT_DIR$/inc/fdf.h" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/draw.c" beforeDir="false" afterPath="$PROJECT_DIR$/src/draw.c" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/loop.c" beforeDir="false" afterPath="$PROJECT_DIR$/src/loop.c" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main.c" beforeDir="false" afterPath="$PROJECT_DIR$/src/main.c" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/read_map.c" beforeDir="false" afterPath="$PROJECT_DIR$/src/read_map.c" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Makefile" beforeDir="false" afterPath="$PROJECT_DIR$/Makefile" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/cmake-build-debug/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -37,10 +28,10 @@
   <component name="ExecutionTargetManager" SELECTED_TARGET="CMakeBuildProfile:Debug" />
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/read_map.c">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="485">
+            <state relative-caret-position="-293">
               <caret line="57" column="34" selection-start-line="57" selection-start-column="34" selection-end-line="57" selection-end-column="34" />
               <folding>
                 <element signature="e#917#1388#0" />
@@ -54,7 +45,16 @@
         <entry file="file://$PROJECT_DIR$/src/draw.c">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="450">
-              <caret line="30" lean-forward="true" selection-start-line="30" selection-end-line="30" />
+              <caret line="30" selection-start-line="30" selection-end-line="30" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/CMakeLists.txt">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="360">
+              <caret line="24" lean-forward="true" selection-start-line="24" selection-end-line="24" />
             </state>
           </provider>
         </entry>
@@ -62,8 +62,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/inc/fdf.h">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="180">
-              <caret line="12" column="13" lean-forward="true" selection-start-line="12" selection-start-column="13" selection-end-line="12" selection-end-column="13" />
+            <state relative-caret-position="413">
+              <caret line="42" column="22" selection-start-line="42" selection-start-column="22" selection-end-line="42" selection-end-column="22" />
               <folding>
                 <element signature="e#922#950#0" expanded="true" />
               </folding>
@@ -90,11 +90,11 @@
         <option value="$PROJECT_DIR$/libft/ft_clear_table.c" />
         <option value="$PROJECT_DIR$/minilibx/mlx_int.h" />
         <option value="$PROJECT_DIR$/CMakeLists.txt" />
-        <option value="$PROJECT_DIR$/Makefile" />
         <option value="$PROJECT_DIR$/src/main.c" />
         <option value="$PROJECT_DIR$/src/loop.c" />
-        <option value="$PROJECT_DIR$/src/draw.c" />
         <option value="$PROJECT_DIR$/inc/fdf.h" />
+        <option value="$PROJECT_DIR$/src/draw.c" />
+        <option value="$PROJECT_DIR$/Makefile" />
         <option value="$PROJECT_DIR$/src/read_map.c" />
       </list>
     </option>
@@ -186,12 +186,12 @@
       <workItem from="1566398345378" duration="23000" />
       <workItem from="1566398369176" duration="1368000" />
       <workItem from="1566468326245" duration="3799000" />
-      <workItem from="1566472874974" duration="8347000" />
+      <workItem from="1566472874974" duration="8754000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="23876000" />
+    <option name="totallyTimeSpent" value="24283000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="11" y="23" width="1665" height="1337" extended-state="0" />
@@ -203,7 +203,7 @@
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" weight="0.32958537" />
       <window_info anchor="bottom" id="Run" order="2" weight="0.32931727" />
-      <window_info active="true" anchor="bottom" id="Debug" order="3" visible="true" weight="0.4257028" />
+      <window_info anchor="bottom" id="Debug" order="3" weight="0.4257028" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
       <window_info anchor="bottom" id="TODO" order="6" />
@@ -211,7 +211,7 @@
       <window_info anchor="bottom" id="Version Control" order="8" />
       <window_info anchor="bottom" id="Terminal" order="9" weight="0.26907632" />
       <window_info anchor="bottom" id="Event Log" order="10" side_tool="true" />
-      <window_info anchor="bottom" id="Messages" order="11" weight="0.32931727" />
+      <window_info active="true" anchor="bottom" id="Messages" order="11" visible="true" weight="0.32931727" />
       <window_info anchor="bottom" id="CMake" order="12" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
@@ -227,13 +227,18 @@
       <breakpoints>
         <line-breakpoint enabled="true" type="com.jetbrains.cidr.execution.debugger.OCBreakpointType">
           <url>file://$PROJECT_DIR$/src/read_map.c</url>
-          <line>133</line>
-          <option name="timeStamp" value="16" />
+          <line>73</line>
+          <option name="timeStamp" value="18" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="com.jetbrains.cidr.execution.debugger.OCBreakpointType">
           <url>file://$PROJECT_DIR$/src/read_map.c</url>
-          <line>49</line>
-          <option name="timeStamp" value="17" />
+          <line>132</line>
+          <option name="timeStamp" value="19" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="com.jetbrains.cidr.execution.debugger.OCBreakpointType">
+          <url>file://$PROJECT_DIR$/src/read_map.c</url>
+          <line>118</line>
+          <option name="timeStamp" value="20" />
         </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>
@@ -241,13 +246,23 @@
       <configuration name="CMakeRunConfiguration">
         <watch expression="fdf-&gt;points[0][0]" language="ObjectiveC" />
         <watch expression="fdf-&gt;points[0][1]" language="ObjectiveC" />
-        <watch expression="fdf-&gt;points[0][2]" language="ObjectiveC" />
-        <watch expression="fdf-&gt;points[0][3]" language="ObjectiveC" />
+        <watch expression="fdf-&gt;points[1][2]" language="ObjectiveC" />
+        <watch expression="fdf-&gt;points[1][3]" language="ObjectiveC" />
       </configuration>
     </watches-manager>
   </component>
   <component name="debuggerHistoryManager">
     <expressions id="watch">
+      <expression>
+        <expression-string>fdf-&gt;points[1][3]</expression-string>
+        <language-id>ObjectiveC</language-id>
+        <evaluation-mode>EXPRESSION</evaluation-mode>
+      </expression>
+      <expression>
+        <expression-string>fdf-&gt;points[1][2]</expression-string>
+        <language-id>ObjectiveC</language-id>
+        <evaluation-mode>EXPRESSION</evaluation-mode>
+      </expression>
       <expression>
         <expression-string>fdf-&gt;points[0][3]</expression-string>
         <language-id>ObjectiveC</language-id>
@@ -360,20 +375,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Makefile">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="525">
-          <caret line="35" lean-forward="true" selection-start-line="35" selection-end-line="35" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/CMakeLists.txt">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="360">
-          <caret line="24" lean-forward="true" selection-start-line="24" selection-end-line="24" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/loop.c">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="420">
@@ -388,10 +389,17 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/inc/fdf.h">
+    <entry file="file://$PROJECT_DIR$/Makefile">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="180">
-          <caret line="12" column="13" lean-forward="true" selection-start-line="12" selection-start-column="13" selection-end-line="12" selection-end-column="13" />
+          <caret line="12" selection-start-line="12" selection-end-line="12" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/inc/fdf.h">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="413">
+          <caret line="42" column="22" selection-start-line="42" selection-start-column="22" selection-end-line="42" selection-end-column="22" />
           <folding>
             <element signature="e#922#950#0" expanded="true" />
           </folding>
@@ -401,18 +409,25 @@
     <entry file="file://$PROJECT_DIR$/src/draw.c">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="450">
-          <caret line="30" lean-forward="true" selection-start-line="30" selection-end-line="30" />
+          <caret line="30" selection-start-line="30" selection-end-line="30" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/read_map.c">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="485">
+        <state relative-caret-position="-293">
           <caret line="57" column="34" selection-start-line="57" selection-start-column="34" selection-end-line="57" selection-end-column="34" />
           <folding>
             <element signature="e#917#1388#0" />
             <element signature="e#1866#2086#0" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/CMakeLists.txt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="360">
+          <caret line="24" lean-forward="true" selection-start-line="24" selection-end-line="24" />
         </state>
       </provider>
     </entry>
