@@ -6,3 +6,27 @@
 
 #IncludeRegexTransform: 
 
+/Users/smight/Desktop/fdf_new/inc/fdf.h
+../libft/libft.h
+/Users/smight/Desktop/fdf_new/libft/libft.h
+../minilibx/mlx.h
+/Users/smight/Desktop/fdf_new/minilibx/mlx.h
+stdio.h
+-
+fcntl.h
+-
+
+/Users/smight/Desktop/fdf_new/libft/libft.h
+string.h
+-
+stdlib.h
+-
+unistd.h
+-
+
+/Users/smight/Desktop/fdf_new/minilibx/mlx.h
+
+/Users/smight/Desktop/fdf_new/src/read_map.c
+../inc/fdf.h
+/Users/smight/Desktop/fdf_new/inc/fdf.h
+

@@ -29,6 +29,7 @@ typedef struct	s_point
 	double		color;
 	int			value;
 	int 		len;
+	int			line_len;
 }				t_point;
 
 typedef struct	s_fdf

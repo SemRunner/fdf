@@ -37,7 +37,7 @@ int		read_color(char *str)
 	return (res);
 }
 
-int 	point_count(char **table, t_fdf *fdf)
+int 	point_count(char **table)
 {
 	int	i;
 
@@ -50,6 +50,7 @@ int 	point_count(char **table, t_fdf *fdf)
 int 	malloc_table(t_fdf *fdf, char *filename)
 {
 	fdf->fd = open(filename, O_RDONLY);
+	fdf->buff = NULL;
 	if (read(fdf->fd, NULL, 0) == -1)
 		return (0);
 	fdf->line_count = 0;
@@ -58,20 +59,21 @@ int 	malloc_table(t_fdf *fdf, char *filename)
 	if (!(fdf->points = ft_memalloc(sizeof(t_point*) * fdf->line_count)))
 		return (0);
 	close(fdf->fd);
+	fdf->buff = NULL;
 	return (1);
 }
 
 void	print_map(t_fdf *fdf)
 {
 	int		i;
-	t_point	*points;
+	int 	j;
 
 	i = -1;
 	while (++i < fdf->line_count)
 	{
-		points = fdf->points[i];
-		while (points)
-			ft_printf("%d ", points->number++);
+		j = -1;
+		while (++j < fdf->points[i][0].line_len)
+			ft_printf("%2d ", (int)fdf->points[i][j].number);
 		ft_printf("\n");
 	}
 }
@@ -87,15 +89,15 @@ int		read_map(t_fdf *fdf, char *filename)
 	fdf->fd = open(filename, O_RDONLY);
 	i = -1;
 	while (get_next_line(fdf->fd, &fdf->buff) > 0 && (tmp = ft_strsplit(fdf->buff, ' ')))
-		if ((fdf->points[++i] = ft_memalloc(sizeof(t_point) * point_count(tmp, fdf))))
+		if ((fdf->points[++i] = ft_memalloc(sizeof(t_point) * point_count(tmp))))
 		{
 			j = -1;
 			while (tmp[++j])
 				fdf->points[i][j].number = ft_atoi(tmp[j]);
-			//ft_printf("len:%d\n", j);
-			//ft_clear_table(tmp, j);
+			fdf->points[i][0].line_len = j;
+			//ft_clear_table(tmp, j);????
 		}
 	close(fdf->fd);
-		print_map(fdf);
+	print_map(fdf);
 	return (1);
 }
