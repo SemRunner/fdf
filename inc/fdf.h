@@ -14,7 +14,7 @@
 # define FDF_H
 
 # include "../libft/libft.h"
-# include "../minilibx/mlx.h"
+# include "../minilibx_macos/mlx.h"
 # include <stdio.h>
 # include <fcntl.h>
 

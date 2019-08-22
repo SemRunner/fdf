@@ -2,6 +2,7 @@ NAME = ./fdf
 
 FILES = main.c \
         read_map.c \
+        loop.c
 
 SRC = $(addprefix src/,$(FILES))
 
@@ -9,17 +10,19 @@ OBJ = $(addprefix obj/,$(FILES:.c=.o))
 
 LIB = libft/libft.a
 
+LIB2 = libft/libftprintf.a
+
 FLAGS = 
 
 all : $(NAME)
 
 $(NAME) : $(OBJ)
 	@make -C libft/
-	@gcc -o $(NAME) -Ilibft $(OBJ) libft/libftprintf.a $(LIB) -lmlx -framework OpenGL -framework AppKit
+	@gcc -o $(NAME) $(OBJ) $(LIB) $(LIB2) -lmlx -framework OpenGL -framework AppKit
 
 obj/%.o: src/%.c
 	@mkdir -p obj/
-	@gcc $(FLAGS) -I src/ -o $@ -c $<
+	@gcc $(FLAGS) -Iinc -o $@ -c $<
 
 clean :
 	@make clean -C libft/
