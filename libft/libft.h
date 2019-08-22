@@ -96,6 +96,5 @@ size_t				ft_list_len(t_list *alst);
 void				ft_bubble_sort(char *str);
 int					get_next_line(const int fd, char **line);
 void				ft_lstpush(t_list **alst, t_list *new);
-char				*ft_itoa_base(int n, int base);
 
 #endif

@@ -17,7 +17,6 @@ set(CMAKE_DEPENDS_CHECK_C
   "/Users/smight/Desktop/fdf_new/libft/ft_isprint.c" "/Users/smight/Desktop/fdf_new/cmake-build-debug/CMakeFiles/fdf_new.dir/libft/ft_isprint.c.o"
   "/Users/smight/Desktop/fdf_new/libft/ft_isspace.c" "/Users/smight/Desktop/fdf_new/cmake-build-debug/CMakeFiles/fdf_new.dir/libft/ft_isspace.c.o"
   "/Users/smight/Desktop/fdf_new/libft/ft_itoa.c" "/Users/smight/Desktop/fdf_new/cmake-build-debug/CMakeFiles/fdf_new.dir/libft/ft_itoa.c.o"
-  "/Users/smight/Desktop/fdf_new/libft/ft_itoa_base.c" "/Users/smight/Desktop/fdf_new/cmake-build-debug/CMakeFiles/fdf_new.dir/libft/ft_itoa_base.c.o"
   "/Users/smight/Desktop/fdf_new/libft/ft_list_len.c" "/Users/smight/Desktop/fdf_new/cmake-build-debug/CMakeFiles/fdf_new.dir/libft/ft_list_len.c.o"
   "/Users/smight/Desktop/fdf_new/libft/ft_lstadd.c" "/Users/smight/Desktop/fdf_new/cmake-build-debug/CMakeFiles/fdf_new.dir/libft/ft_lstadd.c.o"
   "/Users/smight/Desktop/fdf_new/libft/ft_lstdel.c" "/Users/smight/Desktop/fdf_new/cmake-build-debug/CMakeFiles/fdf_new.dir/libft/ft_lstdel.c.o"

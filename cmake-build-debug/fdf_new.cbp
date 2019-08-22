@@ -128,9 +128,6 @@
 		<Unit filename="/Users/smight/Desktop/fdf_new/libft/ft_itoa.c">
 			<Option target="fdf_new"/>
 		</Unit>
-		<Unit filename="/Users/smight/Desktop/fdf_new/libft/ft_itoa_base.c">
-			<Option target="fdf_new"/>
-		</Unit>
 		<Unit filename="/Users/smight/Desktop/fdf_new/libft/ft_list_len.c">
 			<Option target="fdf_new"/>
 		</Unit>
@@ -300,9 +297,6 @@
 			<Option target="fdf_new"/>
 		</Unit>
 		<Unit filename="/Users/smight/Desktop/fdf_new/libft/libft.h">
-			<Option target="fdf_new"/>
-		</Unit>
-		<Unit filename="/Users/smight/Desktop/fdf_new/libft/libftprintf.a">
 			<Option target="fdf_new"/>
 		</Unit>
 		<Unit filename="/Users/smight/Desktop/fdf_new/src/main.c">

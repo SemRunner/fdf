@@ -474,33 +474,6 @@ libft/ft_itoa.c.s:
 	$(MAKE) -f CMakeFiles/fdf_new.dir/build.make CMakeFiles/fdf_new.dir/libft/ft_itoa.c.s
 .PHONY : libft/ft_itoa.c.s
 
-libft/ft_itoa_base.o: libft/ft_itoa_base.c.o
-
-.PHONY : libft/ft_itoa_base.o
-
-# target to build an object file
-libft/ft_itoa_base.c.o:
-	$(MAKE) -f CMakeFiles/fdf_new.dir/build.make CMakeFiles/fdf_new.dir/libft/ft_itoa_base.c.o
-.PHONY : libft/ft_itoa_base.c.o
-
-libft/ft_itoa_base.i: libft/ft_itoa_base.c.i
-
-.PHONY : libft/ft_itoa_base.i
-
-# target to preprocess a source file
-libft/ft_itoa_base.c.i:
-	$(MAKE) -f CMakeFiles/fdf_new.dir/build.make CMakeFiles/fdf_new.dir/libft/ft_itoa_base.c.i
-.PHONY : libft/ft_itoa_base.c.i
-
-libft/ft_itoa_base.s: libft/ft_itoa_base.c.s
-
-.PHONY : libft/ft_itoa_base.s
-
-# target to generate assembly for a file
-libft/ft_itoa_base.c.s:
-	$(MAKE) -f CMakeFiles/fdf_new.dir/build.make CMakeFiles/fdf_new.dir/libft/ft_itoa_base.c.s
-.PHONY : libft/ft_itoa_base.c.s
-
 libft/ft_list_len.o: libft/ft_list_len.c.o
 
 .PHONY : libft/ft_list_len.o
@@ -2115,9 +2088,6 @@ help:
 	@echo "... libft/ft_itoa.o"
 	@echo "... libft/ft_itoa.i"
 	@echo "... libft/ft_itoa.s"
-	@echo "... libft/ft_itoa_base.o"
-	@echo "... libft/ft_itoa_base.i"
-	@echo "... libft/ft_itoa_base.s"
 	@echo "... libft/ft_list_len.o"
 	@echo "... libft/ft_list_len.i"
 	@echo "... libft/ft_list_len.s"

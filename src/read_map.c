@@ -92,10 +92,10 @@ int		read_map(t_fdf *fdf, char *filename)
 			j = -1;
 			while (tmp[++j])
 				fdf->points[i][j].number = ft_atoi(tmp[j]);
-			ft_printf("len:%d\n", j);
-			ft_clear_table(tmp, j);
+			//ft_printf("len:%d\n", j);
+			//ft_clear_table(tmp, j);
 		}
 	close(fdf->fd);
-		//print_map(fdf);
+		print_map(fdf);
 	return (1);
 }

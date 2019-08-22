@@ -40,9 +40,6 @@ CMakeFiles/fdf_new.dir/libft/ft_isspace.c.o
 CMakeFiles/fdf_new.dir/libft/ft_itoa.c.o
  /Users/smight/Desktop/fdf_new/libft/ft_itoa.c
  /Users/smight/Desktop/fdf_new/libft/libft.h
-CMakeFiles/fdf_new.dir/libft/ft_itoa_base.c.o
- /Users/smight/Desktop/fdf_new/libft/ft_itoa_base.c
- /Users/smight/Desktop/fdf_new/libft/libft.h
 CMakeFiles/fdf_new.dir/libft/ft_list_len.c.o
  /Users/smight/Desktop/fdf_new/libft/ft_list_len.c
  /Users/smight/Desktop/fdf_new/libft/libft.h

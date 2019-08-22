@@ -21,7 +21,6 @@ add_executable(fdf_new
         libft/ft_isprint.c
         libft/ft_isspace.c
         libft/ft_itoa.c
-        libft/ft_itoa_base.c
         libft/ft_list_len.c
         libft/ft_lstadd.c
         libft/ft_lstdel.c
@@ -80,5 +79,6 @@ add_executable(fdf_new
         libft/get_next_line.c
         libft/libft.h
         src/main.c
-        src/read_map.c
-        libft/libftprintf.a)
+        src/read_map.c)
+
+target_link_libraries(fdf_new /Users/smight/Desktop/fdf_new/libft/libftprintf.a)

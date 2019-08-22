@@ -12,7 +12,6 @@ file(REMOVE_RECURSE
   "CMakeFiles/fdf_new.dir/libft/ft_isprint.c.o"
   "CMakeFiles/fdf_new.dir/libft/ft_isspace.c.o"
   "CMakeFiles/fdf_new.dir/libft/ft_itoa.c.o"
-  "CMakeFiles/fdf_new.dir/libft/ft_itoa_base.c.o"
   "CMakeFiles/fdf_new.dir/libft/ft_list_len.c.o"
   "CMakeFiles/fdf_new.dir/libft/ft_lstadd.c.o"
   "CMakeFiles/fdf_new.dir/libft/ft_lstdel.c.o"
