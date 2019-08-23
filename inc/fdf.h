@@ -20,6 +20,7 @@
 
 # define WIDTH 2000
 # define HIGHT 1200
+# define SHIFT 50
 # define ESC 53
 # define PUT 76
 # define ABS(a) a >= 0 ? a : -a
@@ -47,6 +48,8 @@ typedef struct	s_fdf
 	int			endian;
 	int 		column_count;
 	int			fd;
+	int 		width_shift;
+	int 		hight_shift;
 	t_point		**points;
 }				t_fdf;
 

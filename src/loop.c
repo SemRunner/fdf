@@ -12,6 +12,20 @@
 
 #include "../inc/fdf.h"
 
+void	get_shift(int key, t_fdf *fdf)
+{
+	if (key == 123)//left
+		fdf->width_shift -= SHIFT;
+	else if (key == 124)//right
+		fdf->width_shift += SHIFT;
+	else if (key == 125)//down
+		fdf->hight_shift += SHIFT;
+	else//up
+		fdf->hight_shift -= SHIFT;
+	draw_map(fdf);
+	mlx_put_image_to_window(fdf->mlx_ptr, fdf->win_ptr, fdf->img_ptr, 0, 0);
+}
+
 int		deal_key(int key, void *param)
 {
 	if (key == ESC)
@@ -21,7 +35,9 @@ int		deal_key(int key, void *param)
 	}
 	else if (key == PUT)
 		mlx_put_image_to_window(((t_fdf*)param)->mlx_ptr, ((t_fdf*)param)->win_ptr, ((t_fdf*)param)->img_ptr, 0, 0);
-	ft_printf("test\n");
+	else if (key >= 123 && key <= 126)
+		get_shift(key, param);
+	ft_printf("%d\n", ((t_fdf*)param)->width_shift);
 	return (0);
 }
 
@@ -29,5 +45,6 @@ void	loop(t_fdf *fdf)
 {
 	draw_map(fdf);
 	mlx_hook(fdf->win_ptr, 2, 0, deal_key, fdf);//ловлю с клавы esc
+	mlx_put_image_to_window(fdf->mlx_ptr, fdf->win_ptr, fdf->img_ptr, 0, 0);
 	mlx_loop(fdf->mlx_ptr);
 }
