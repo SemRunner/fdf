@@ -22,11 +22,11 @@
 # define HIGHT 1200
 # define ESC 53
 # define PUT 76
-# define ABS(a) a >= 0 ? a : -a;
+# define ABS(a) a >= 0 ? a : -a
 
 typedef struct	s_point
 {
-	double		number;
+	int 		number;
 	double		color;
 	int			x;
 	int 		y;

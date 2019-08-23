@@ -51,7 +51,7 @@ void	update_coordinates(t_fdf *fdf)
 	{
 		j = 0;
 		fdf->points[i][0].x += 300;
-		fdf->points[i][0].y += 250;
+		fdf->points[i][0].y += 250 + hight_diff;
 		while (++j <= fdf->column_count)
 		{
 			fdf->points[i][j].x = fdf->points[i][j - 1].x + width_diff;
@@ -68,12 +68,12 @@ int 	point_count(char **table, t_fdf *fdf)
 	i = 0;
 	while (table[i])
 		i++;
-	if (fdf->column_count > 0 && i + 1 != fdf->column_count)
+	if (fdf->column_count > 0 && i != fdf->column_count)
 	{
 		//чистка
 		exit(0);
 	}
-	i++;
+	//i++;
 	fdf->column_count == 0 ? fdf->column_count = i : 0;
 	return (i);
 }
