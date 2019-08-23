@@ -20,7 +20,7 @@ void	iso_projection_update(t_fdf *fdf, t_point *p)
 	old_x = p->x;
 	old_y = p->y;
 	p->x = (old_x - old_y) * cos(0.523599);
-	p->y = -p->number + (old_x + old_y) * sin(0.523599);
+	p->y = -p->number * RATE + (old_x + old_y) * sin(0.523599);
 }
 
 void	edit_coordinates(t_fdf *fdf, t_point *p1, t_point *p2)

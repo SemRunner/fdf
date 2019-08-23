@@ -25,8 +25,8 @@
 # define ESC 53
 # define PUT 76
 # define ISO 1
+# define RATE 10
 # define PARALLEL 0
-# define ABS(a) a >= 0 ? a : -a
 
 typedef struct	s_point
 {
@@ -66,5 +66,6 @@ void	draw_map(t_fdf *fdf);
 int		get_line_count(t_fdf *fdf);
 void	print_map(t_fdf *fdf);
 void	edit_coordinates(t_fdf *fdf, t_point *p1, t_point *p2);
+int 	abs(int a);
 
 #endif
