@@ -31,36 +31,34 @@ int 	get_color(int hight)
 		return (0x2ed952);//green
 }
 
-void	edit_coordinates(t_fdf *fdf, t_point *p1, t_point *p2)
-{
-	p1->x += fdf->width_shift;
-	p2->x += fdf->width_shift;
-	p1->y += fdf->hight_shift;
-	p2->y += fdf->hight_shift;
-}
-
 void	draw_to_x(t_fdf *fdf, t_point p1, t_point p2)//p1.x <= p2.x всегда
 {
 	int 	x;
 	int 	y;
-	double	real_y;
+	double	diff;
 	double	step;
 
 	edit_coordinates(fdf, &p1, &p2);
 	x = p1.x;
 	y = p1.y;
-	real_y = (double)p1.y;
+	diff = 0;
 	step = (double)(p2.y - p1.y) / (double)(p2.x - p1.x);
-	while (x < p2.x)
+	while (x <= p2.x)
 	{
-		if (step >= 0 && real_y > (double)y && real_y >= (int)real_y + 0.5)
+		if (step > 0 && diff >= 0.5)
+		{
 			y++;
-		else if (step <= 0 && real_y < (double)y && real_y < (int)real_y + 0.5)
+			diff = 0;
+		}
+		else if (step < 0 && diff <= -0.5)
+		{
 			y--;
+			diff = 0;
+		}
 		if (x >= 0 && x < WIDTH && y >= 0 && y < HIGHT)//если координата реальна
 			fdf->mlx_map[WIDTH * y + x] = get_color((ABS(p1.number) + ABS(p2.number)) / 2);
 		x++;
-		real_y += step;
+		diff += step;
 	}
 }
 
@@ -68,30 +66,36 @@ void	draw_to_y(t_fdf *fdf, t_point p1, t_point p2)//p1.y <= p2.y всегда
 {
 	int 	x;
 	int 	y;
-	double	real_x;
+	double	diff;
 	double	step;
 
 	edit_coordinates(fdf, &p1, &p2);
-	x = p1.x;
 	y = p1.y;
-	real_x = (double)p1.x;
+	x = p1.x;
+	diff = 0;
 	step = (double)(p2.x - p1.x) / (double)(p2.y - p1.y);
-	while (y < p2.y)
+	while (y <= p2.y)
 	{
-		if (step >= 0 && real_x > (double)x && real_x >= (int)real_x + 0.5)
+		if (step > 0 && diff >= 0.5)
+		{
 			x++;
-		else if (step <= 0 && real_x < (double)x && real_x < (int)real_x + 0.5)
+			diff = 0;
+		}
+		else if (step < 0 && diff <= -0.5)
+		{
 			x--;
+			diff = 0;
+		}
 		if (x >= 0 && x < WIDTH && y >= 0 && y < HIGHT)//если координата реальна
 			fdf->mlx_map[WIDTH * y + x] = get_color((ABS(p1.number) + ABS(p2.number)) / 2);
 		y++;
-		real_x += step;
+		diff += step;
 	}
 }
 
 void	draw_line(t_fdf *fdf, t_point p1, t_point p2)
 {
-	if (ABS(p2.x - p1.x) >= ABS(p2.y - p1.y))
+	if (ABS(p2.x - p1.x) >= ABS(p2.y - p1.y))//if dx >= dy
 	{
 		if (p1.x <= p2.x)
 			draw_to_x(fdf, p1, p2);

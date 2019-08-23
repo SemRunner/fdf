@@ -22,8 +22,6 @@ void	get_shift(int key, t_fdf *fdf)
 		fdf->hight_shift += SHIFT;
 	else//up
 		fdf->hight_shift -= SHIFT;
-	draw_map(fdf);
-	mlx_put_image_to_window(fdf->mlx_ptr, fdf->win_ptr, fdf->img_ptr, 0, 0);
 }
 
 int		deal_key(int key, void *param)
@@ -37,12 +35,20 @@ int		deal_key(int key, void *param)
 		mlx_put_image_to_window(((t_fdf*)param)->mlx_ptr, ((t_fdf*)param)->win_ptr, ((t_fdf*)param)->img_ptr, 0, 0);
 	else if (key >= 123 && key <= 126)
 		get_shift(key, param);
+	else if (key == 83)
+		((t_fdf*)param)->projection = ISO;
+	else if (key == 84)
+		((t_fdf*)param)->projection = PARALLEL;
+	draw_map((t_fdf*)param);//каждый раз после кнопок рисую мапу
+	mlx_put_image_to_window(((t_fdf*)param)->mlx_ptr, ((t_fdf*)param)->win_ptr,\
+	((t_fdf*)param)->img_ptr, 0, 0);
 	ft_printf("%d\n", ((t_fdf*)param)->width_shift);
 	return (0);
 }
 
 void	loop(t_fdf *fdf)
 {
+	//fdf->projection = ISO;
 	draw_map(fdf);
 	mlx_hook(fdf->win_ptr, 2, 0, deal_key, fdf);//ловлю с клавы esc
 	mlx_put_image_to_window(fdf->mlx_ptr, fdf->win_ptr, fdf->img_ptr, 0, 0);

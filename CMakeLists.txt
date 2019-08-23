@@ -15,7 +15,8 @@ add_executable(fdf_new
         src/main.c
         src/read_map.c
         src/draw.c
-        src/loop.c)
+        src/loop.c
+        src/edit_coordinates.c)
 
 target_link_libraries(fdf_new /Users/smight/Desktop/fdf_new/libft/libftprintf.a)
 target_link_libraries(fdf_new /Users/smight/Desktop/fdf_new/libft/libft.a)

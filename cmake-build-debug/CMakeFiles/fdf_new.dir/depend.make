@@ -6,6 +6,11 @@ CMakeFiles/fdf_new.dir/src/draw.c.o: ../libft/libft.h
 CMakeFiles/fdf_new.dir/src/draw.c.o: ../minilibx_macos/mlx.h
 CMakeFiles/fdf_new.dir/src/draw.c.o: ../src/draw.c
 
+CMakeFiles/fdf_new.dir/src/edit_coordinates.c.o: ../inc/fdf.h
+CMakeFiles/fdf_new.dir/src/edit_coordinates.c.o: ../libft/libft.h
+CMakeFiles/fdf_new.dir/src/edit_coordinates.c.o: ../minilibx_macos/mlx.h
+CMakeFiles/fdf_new.dir/src/edit_coordinates.c.o: ../src/edit_coordinates.c
+
 CMakeFiles/fdf_new.dir/src/loop.c.o: ../inc/fdf.h
 CMakeFiles/fdf_new.dir/src/loop.c.o: ../libft/libft.h
 CMakeFiles/fdf_new.dir/src/loop.c.o: ../minilibx_macos/mlx.h

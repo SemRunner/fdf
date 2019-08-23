@@ -3,6 +3,7 @@ file(REMOVE_RECURSE
   "CMakeFiles/fdf_new.dir/src/read_map.c.o"
   "CMakeFiles/fdf_new.dir/src/draw.c.o"
   "CMakeFiles/fdf_new.dir/src/loop.c.o"
+  "CMakeFiles/fdf_new.dir/src/edit_coordinates.c.o"
   "fdf_new.pdb"
   "fdf_new"
 )

@@ -17,12 +17,15 @@
 # include "../minilibx_macos/mlx.h"
 # include <stdio.h>
 # include <fcntl.h>
+# include <math.h>
 
 # define WIDTH 2000
 # define HIGHT 1200
 # define SHIFT 50
 # define ESC 53
 # define PUT 76
+# define ISO 1
+# define PARALLEL 0
 # define ABS(a) a >= 0 ? a : -a
 
 typedef struct	s_point
@@ -50,6 +53,7 @@ typedef struct	s_fdf
 	int			fd;
 	int 		width_shift;
 	int 		hight_shift;
+	char		projection;
 	t_point		**points;
 }				t_fdf;
 
@@ -61,5 +65,6 @@ int		read_map(t_fdf *fdf, char *filename);
 void	draw_map(t_fdf *fdf);
 int		get_line_count(t_fdf *fdf);
 void	print_map(t_fdf *fdf);
+void	edit_coordinates(t_fdf *fdf, t_point *p1, t_point *p2);
 
 #endif

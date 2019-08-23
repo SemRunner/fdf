@@ -3,7 +3,8 @@ NAME = ./fdf
 FILES = main.c \
         read_map.c \
         loop.c \
-        draw.c
+        draw.c \
+        edit_coordinates.c
 
 SRC = $(addprefix src/,$(FILES))
 

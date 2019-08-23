@@ -15,6 +15,8 @@ stdio.h
 -
 fcntl.h
 -
+math.h
+-
 
 /Users/smight/Desktop/fdf_new/libft/libft.h
 string.h
@@ -26,7 +28,7 @@ unistd.h
 
 /Users/smight/Desktop/fdf_new/minilibx_macos/mlx.h
 
-/Users/smight/Desktop/fdf_new/src/draw.c
+/Users/smight/Desktop/fdf_new/src/loop.c
 ../inc/fdf.h
 /Users/smight/Desktop/fdf_new/inc/fdf.h
 
