@@ -24,6 +24,12 @@ void	get_shift(int key, t_fdf *fdf)
 		fdf->hight_shift -= SHIFT;
 }
 
+void	to_start(t_fdf *fdf)
+{
+	fdf->width_shift = 0;
+	fdf->hight_shift = 0;
+}
+
 int		deal_key(int key, void *param)
 {
 	if (key == ESC)
@@ -39,6 +45,8 @@ int		deal_key(int key, void *param)
 		((t_fdf*)param)->projection = ISO;
 	else if (key == 84)
 		((t_fdf*)param)->projection = PARALLEL;
+	else if (key == 49)
+		to_start(param);
 	draw_map((t_fdf*)param);//каждый раз после кнопок рисую мапу
 	mlx_put_image_to_window(((t_fdf*)param)->mlx_ptr, ((t_fdf*)param)->win_ptr,\
 	((t_fdf*)param)->img_ptr, 0, 0);

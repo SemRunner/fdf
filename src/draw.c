@@ -31,7 +31,7 @@ int 	get_color(int hight)
 		return (0x2ed952);//green
 }
 
-int 	abs(int a)
+int 	abs_f(int a)
 {
 	return (a >= 0 ? a : -a);
 }
@@ -41,29 +41,23 @@ void	draw_to_x(t_fdf *fdf, t_point p1, t_point p2)//p1.x <= p2.x всегда
 	int dx;
 	int dy;
 	int error;
-	int y;
-	int x;
 	int	dir_y;
 
-	y = p1.y;
-	x = p1.x;
 	error = 0;
-	dir_y = p2.y - p1.y;
-	dir_y > 0 ? dir_y = 1 : 0;
-	dir_y < 0 ? dir_y = -1 : 0;
-	dx = abs(p2.x - p1.x);
-	dy = abs(p2.y - p1.y);
-	while (x < p2.x)
+	dir_y = p2.y - p1.y >= 0 ? 1 : -1;
+	dx = abs_f(p2.x - p1.x);
+	dy = abs_f(p2.y - p1.y);
+	while (p1.x < p2.x)
 	{
-		if (x >= 0 && x < WIDTH && y >= 0 && y < HIGHT)//если координата реальна
-			fdf->mlx_map[WIDTH * y + x] = get_color((abs(p1.number) + abs(p2.number)) / 2);
+		if (p1.x >= 0 && p1.x < WIDTH && p1.y >= 0 && p1.y < HIGHT)//если координата реальна
+			fdf->mlx_map[WIDTH * p1.y + p1.x] = get_color((abs_f(p1.number) + abs_f(p2.number)) / 2);
 		error += dy;
 		if (2 * error >= dx)
 		{
-			y += dir_y;
+			p1.y += dir_y;
 			error -= dx;
 		}
-		x++;
+		p1.x++;
 	}
 }
 
@@ -72,29 +66,23 @@ void	draw_to_y(t_fdf *fdf, t_point p1, t_point p2)//p1.y <= p2.y всегда
 	int dx;
 	int dy;
 	int error;
-	int y;
-	int x;
 	int	dir_x;
 
-	y = p1.y;
-	x = p1.x;
 	error = 0;
-	dir_x = p2.x - p1.x;
-	dir_x > 0 ? dir_x = 1 : 0;
-	dir_x < 0 ? dir_x = -1 : 0;
-	dx = abs(p2.x - p1.x);
-	dy = abs(p2.y - p1.y);
-	while (y < p2.y)
+	dir_x = p2.x - p1.x >= 0 ? 1 : -1;
+	dx = abs_f(p2.x - p1.x);
+	dy = abs_f(p2.y - p1.y);
+	while (p1.y < p2.y)
 	{
-		if (x >= 0 && x < WIDTH && y >= 0 && y < HIGHT)//если координата реальна
-			fdf->mlx_map[WIDTH * y + x] = get_color((abs(p1.number) + abs(p2.number)) / 2);
+		if (p1.x >= 0 && p1.x < WIDTH && p1.y >= 0 && p1.y < HIGHT)//если координата реальна
+			fdf->mlx_map[WIDTH * p1.y + p1.x] = get_color((abs_f(p1.number) + abs_f(p2.number)) / 2);
 		error += dx;
 		if (2 * error >= dy)
 		{
-			x += dir_x;
+			p1.x += dir_x;
 			error -= dy;
 		}
-		y++;
+		p1.y++;
 	}
 }
 
@@ -106,7 +94,7 @@ void	draw_line(t_fdf *fdf, t_point p1, t_point p2)
 	edit_coordinates(fdf, &p1, &p2);
 	dx = p2.x - p1.x;
 	dy = p2.y - p1.y;
-	if (abs(dx) >= abs(dy))//if dx >= dy
+	if (abs_f(dx) >= abs_f(dy))//if dx >= dy
 	{
 		if (p1.x <= p2.x)
 			draw_to_x(fdf, p1, p2);
