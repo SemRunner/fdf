@@ -21,6 +21,11 @@ CMakeFiles/fdf_new.dir/src/main.c.o
  /Users/smight/Desktop/fdf_new/libft/libft.h
  /Users/smight/Desktop/fdf_new/minilibx_macos/mlx.h
  /Users/smight/Desktop/fdf_new/src/main.c
+CMakeFiles/fdf_new.dir/src/menu.c.o
+ /Users/smight/Desktop/fdf_new/inc/fdf.h
+ /Users/smight/Desktop/fdf_new/libft/libft.h
+ /Users/smight/Desktop/fdf_new/minilibx_macos/mlx.h
+ /Users/smight/Desktop/fdf_new/src/menu.c
 CMakeFiles/fdf_new.dir/src/read_map.c.o
  /Users/smight/Desktop/fdf_new/inc/fdf.h
  /Users/smight/Desktop/fdf_new/libft/libft.h

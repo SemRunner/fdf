@@ -67,5 +67,6 @@ int		get_line_count(t_fdf *fdf);
 void	print_map(t_fdf *fdf);
 void	edit_coordinates(t_fdf *fdf, t_point *p1, t_point *p2);
 int 	abs_f(int a);
+void	draw_menu(t_fdf *fdf);
 
 #endif

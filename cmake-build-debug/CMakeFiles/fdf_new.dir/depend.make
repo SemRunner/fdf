@@ -21,6 +21,11 @@ CMakeFiles/fdf_new.dir/src/main.c.o: ../libft/libft.h
 CMakeFiles/fdf_new.dir/src/main.c.o: ../minilibx_macos/mlx.h
 CMakeFiles/fdf_new.dir/src/main.c.o: ../src/main.c
 
+CMakeFiles/fdf_new.dir/src/menu.c.o: ../inc/fdf.h
+CMakeFiles/fdf_new.dir/src/menu.c.o: ../libft/libft.h
+CMakeFiles/fdf_new.dir/src/menu.c.o: ../minilibx_macos/mlx.h
+CMakeFiles/fdf_new.dir/src/menu.c.o: ../src/menu.c
+
 CMakeFiles/fdf_new.dir/src/read_map.c.o: ../inc/fdf.h
 CMakeFiles/fdf_new.dir/src/read_map.c.o: ../libft/libft.h
 CMakeFiles/fdf_new.dir/src/read_map.c.o: ../minilibx_macos/mlx.h

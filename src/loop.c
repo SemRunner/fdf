@@ -51,6 +51,7 @@ int		deal_key(int key, void *param)
 	mlx_put_image_to_window(((t_fdf*)param)->mlx_ptr, ((t_fdf*)param)->win_ptr,\
 	((t_fdf*)param)->img_ptr, 0, 0);
 	ft_printf("%d\n", ((t_fdf*)param)->width_shift);
+	draw_menu(param);
 	return (0);
 }
 
@@ -60,5 +61,6 @@ void	loop(t_fdf *fdf)
 	draw_map(fdf);
 	mlx_hook(fdf->win_ptr, 2, 0, deal_key, fdf);//ловлю с клавы esc
 	mlx_put_image_to_window(fdf->mlx_ptr, fdf->win_ptr, fdf->img_ptr, 0, 0);
+	draw_menu(fdf);
 	mlx_loop(fdf->mlx_ptr);
 }
