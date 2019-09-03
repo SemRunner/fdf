@@ -12,6 +12,20 @@
 
 #include "../inc/fdf.h"
 
+void	rotation_update(t_fdf *fdf, t_point *p)
+{
+	p->x -= WIDTH / 2;
+	p->y -= HIGHT / 2;
+	p->y = p->y * cos(RT_STEP * fdf->x_rotation) + p->z * sin(RT_STEP * fdf->x_rotation);
+	p->z = -p->y * sin(RT_STEP * fdf->x_rotation) + p->z * cos(RT_STEP * fdf->x_rotation);
+	p->x = p->x * cos(RT_STEP * fdf->y_rotation) + p->z * sin(RT_STEP * fdf->y_rotation);
+	p->z = -p->x * sin(RT_STEP * fdf->y_rotation) + p->z * cos(RT_STEP * fdf->y_rotation);
+	p->x = p->x * cos(RT_STEP * fdf->z_rotation) - p->y * sin(RT_STEP * fdf->z_rotation);
+	p->y = p->x * sin(RT_STEP * fdf->z_rotation) + p->y * cos(RT_STEP * fdf->z_rotation);
+	p->x += WIDTH / 2;
+	p->y += HIGHT / 2;
+}
+
 void	iso_projection_update(t_fdf *fdf, t_point *p)
 {
 	int old_x;
@@ -32,6 +46,8 @@ void	edit_coordinates(t_fdf *fdf, t_point *p1, t_point *p2)
 		iso_projection_update(fdf, p1);
 		iso_projection_update(fdf, p2);
 	}
+	rotation_update(fdf, p1);
+	rotation_update(fdf, p2);
 	p1->x += fdf->width_shift;
 	p2->x += fdf->width_shift;
 	p1->y += fdf->hight_shift;

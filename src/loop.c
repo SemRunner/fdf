@@ -28,6 +28,26 @@ void	to_start(t_fdf *fdf)
 {
 	fdf->width_shift = 0;
 	fdf->hight_shift = 0;
+	fdf->x_rotation = 0;
+	fdf->y_rotation = 0;
+	fdf->z_rotation = 0;
+}
+
+void	write_rotation(t_fdf *fdf, int key)
+{
+	if (key == 92)
+		fdf->x_rotation = (fdf->x_rotation + 1) % (int)(54 / M_PI);
+	else if (key == 88)
+		fdf->x_rotation = (fdf->x_rotation - 1) % (int)(54 / M_PI);
+	else if (key == 91)
+		fdf->y_rotation = (fdf->y_rotation + 1) % (int)(54 / M_PI);
+	else if (key == 87)
+		fdf->y_rotation = (fdf->y_rotation - 1) % (int)(54 / M_PI);
+	else if (key == 89)
+		fdf->z_rotation = (fdf->z_rotation + 1) % (int)(54 / M_PI);
+	else if (key == 86)
+		fdf->z_rotation = (fdf->z_rotation - 1) % (int)(54 / M_PI);
+
 }
 
 int		deal_key(int key, void *param)
@@ -47,6 +67,8 @@ int		deal_key(int key, void *param)
 		((t_fdf*)param)->projection = PARALLEL;
 	else if (key == 49)
 		to_start(param);
+	else if (key == 92 || key == 88 || key == 91 || key == 87 || key == 89 || key == 86)
+		write_rotation(param, key);
 	draw_map((t_fdf*)param);//каждый раз после кнопок рисую мапу
 	mlx_put_image_to_window(((t_fdf*)param)->mlx_ptr, ((t_fdf*)param)->win_ptr,\
 	((t_fdf*)param)->img_ptr, 0, 0);

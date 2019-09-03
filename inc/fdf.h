@@ -27,6 +27,7 @@
 # define ISO 1
 # define RATE 5
 # define PARALLEL 0
+# define RT_STEP M_PI / 8
 
 typedef struct	s_point
 {
@@ -54,6 +55,9 @@ typedef struct	s_fdf
 	int 		width_shift;
 	int 		hight_shift;
 	char		projection;
+	int 		x_rotation;
+	int 		y_rotation;
+	int 		z_rotation;
 	t_point		**points;
 }				t_fdf;
 
@@ -68,5 +72,6 @@ void	print_map(t_fdf *fdf);
 void	edit_coordinates(t_fdf *fdf, t_point *p1, t_point *p2);
 int 	abs_f(int a);
 void	draw_menu(t_fdf *fdf);
+void	rotation_update(t_fdf *fdf, t_point *p);
 
 #endif
