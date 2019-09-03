@@ -4,7 +4,8 @@ FILES = main.c \
         read_map.c \
         loop.c \
         draw.c \
-        edit_coordinates.c
+        edit_coordinates.c \
+        menu.c
 
 SRC = $(addprefix src/,$(FILES))
 

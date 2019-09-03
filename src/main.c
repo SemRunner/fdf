@@ -46,6 +46,9 @@ int		main(int c, char **v)
 		return (error(1));
 	if (!read_map(&fdf, v[1]))//читаю мапу и заполняю массив double
 		return (error(2));
+	fdf.height_coeff = 1;
+	fdf.min_height = 1;
+	fdf.max_height = 1;
 	initialize_mlx(&fdf, v[1]);
 	loop(&fdf);
 	end_mlx(&fdf);

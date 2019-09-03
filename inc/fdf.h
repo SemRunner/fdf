@@ -32,11 +32,9 @@
 typedef struct	s_point
 {
 	int 		number;
-	double		color;
 	int			x;
 	int 		y;
 	int 		z;
-	int 		len;
 	int			line_len;
 }				t_point;
 
@@ -58,6 +56,9 @@ typedef struct	s_fdf
 	int 		x_rotation;
 	int 		y_rotation;
 	int 		z_rotation;
+	int 		height_coeff;
+	int 		max_height;
+	int 		min_height;
 	t_point		**points;
 }				t_fdf;
 

@@ -23,12 +23,20 @@ void	get_black(t_fdf *fdf)
 		fdf->mlx_map[i] = 0x000000;
 }
 
-int 	get_color(int hight)
+int 	get_color(int hight, t_fdf *fdf)
 {
-	if (hight >= 5)
-		return (0x8f0306);//red
-	else
-		return (0x2ed952);//green
+//	if (hight >= 5)
+//		return (0x8f0306);//red
+//	else
+//		return (0x2ed952);//green
+	int	color;
+
+	color = 0x7F00;
+	if (hight > 0)
+		color |= (hight * 250 / fdf->max_height);
+//	else if (hight < 0)
+//		color |= (hight * 250 / -fdf->min_height);
+	return color;
 }
 
 int 	abs_f(int a)
@@ -50,7 +58,7 @@ void	draw_to_x(t_fdf *fdf, t_point p1, t_point p2)//p1.x <= p2.x всегда
 	while (p1.x < p2.x)
 	{
 		if (p1.x >= 0 && p1.x < WIDTH && p1.y >= 0 && p1.y < HIGHT)//если координата реальна
-			fdf->mlx_map[WIDTH * p1.y + p1.x] = get_color((abs_f(p1.number) + abs_f(p2.number)) / 2);
+			fdf->mlx_map[WIDTH * p1.y + p1.x] = get_color((abs_f(p1.z) + abs_f(p2.z)) / 2, fdf);
 		error += dy;
 		if (2 * error >= dx)
 		{
@@ -75,7 +83,7 @@ void	draw_to_y(t_fdf *fdf, t_point p1, t_point p2)//p1.y <= p2.y всегда
 	while (p1.y < p2.y)
 	{
 		if (p1.x >= 0 && p1.x < WIDTH && p1.y >= 0 && p1.y < HIGHT)//если координата реальна
-			fdf->mlx_map[WIDTH * p1.y + p1.x] = get_color((abs_f(p1.number) + abs_f(p2.number)) / 2);
+			fdf->mlx_map[WIDTH * p1.y + p1.x] = get_color((abs_f(p1.number) + abs_f(p2.number)) / 2, fdf);
 		error += dx;
 		if (2 * error >= dy)
 		{

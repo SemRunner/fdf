@@ -34,7 +34,7 @@ void	iso_projection_update(t_fdf *fdf, t_point *p)
 	old_x = p->x;
 	old_y = p->y;
 	p->x = (old_x - old_y) * cos(0.523599);
-	p->y = -p->number * RATE + (old_x + old_y) * sin(0.523599);
+	p->y = -p->number * RATE * fdf->height_coeff + (old_x + old_y) * sin(0.523599);
 	p->x += 600;
 	p->y -= 200;
 }
