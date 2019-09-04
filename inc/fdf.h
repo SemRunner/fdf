@@ -61,6 +61,7 @@ typedef struct	s_fdf
 	int 		height_coeff;
 	int 		max_height;
 	int 		min_height;
+	int 		is_color_full;
 	t_point		**points;
 }				t_fdf;
 
@@ -76,7 +77,7 @@ void	edit_coordinates(t_fdf *fdf, t_point *p1, t_point *p2);
 int 	abs_f(int a);
 void	draw_menu(t_fdf *fdf);
 void	rotation_update(t_fdf *fdf, t_point *p);
-void	calc_distance_to_points(t_fdf *fdf);
 void	get_color_palette(t_fdf *fdf);
+void	draw_full(t_fdf *fdf);
 
 #endif

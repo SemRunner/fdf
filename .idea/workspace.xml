@@ -13,101 +13,29 @@
   <component name="ChangeListManager">
     <list default="true" id="84bee0d8-167f-4b09-bca5-b57adc5479d3" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeCache.txt" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeCache.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/Makefile.cmake" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/Makefile.cmake" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/CMakeLists.txt" beforeDir="false" afterPath="$PROJECT_DIR$/CMakeLists.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Makefile" beforeDir="false" afterPath="$PROJECT_DIR$/Makefile" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/Makefile2" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/Makefile2" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/clion-log.txt" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/clion-log.txt" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/fdf_new.dir/C.includecache" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/fdf_new.dir/C.includecache" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/fdf_new.dir/DependInfo.cmake" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/fdf_new.dir/DependInfo.cmake" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/fdf_new.dir/build.make" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/fdf_new.dir/build.make" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/fdf_new.dir/cmake_clean.cmake" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/fdf_new.dir/cmake_clean.cmake" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/fdf_new.dir/depend.internal" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/fdf_new.dir/depend.internal" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/fdf_new.dir/depend.make" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/fdf_new.dir/depend.make" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/fdf_new.dir/link.txt" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/fdf_new.dir/link.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/fdf_new.dir/progress.make" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/fdf_new.dir/progress.make" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/fdf_new.dir/src/draw.c.o" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/fdf_new.dir/src/draw.c.o" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/fdf_new.dir/src/edit_coordinates.c.o" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/fdf_new.dir/src/edit_coordinates.c.o" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/fdf_new.dir/src/loop.c.o" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/fdf_new.dir/src/loop.c.o" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/fdf_new.dir/src/main.c.o" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/fdf_new.dir/src/main.c.o" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/fdf_new.dir/src/menu.c.o" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/fdf_new.dir/src/menu.c.o" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/fdf_new.dir/src/read_map.c.o" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/fdf_new.dir/src/read_map.c.o" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/progress.marks" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/progress.marks" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/cmake-build-debug/Makefile" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/Makefile" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/cmake-build-debug/fdf_new" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/fdf_new" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/fdf" beforeDir="false" afterPath="$PROJECT_DIR$/fdf" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/fdf_new.cbp" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/fdf_new.cbp" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/inc/fdf.h" beforeDir="false" afterPath="$PROJECT_DIR$/inc/fdf.h" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/libft/ft_atoi.o" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/libft/ft_atoi_r.o" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/libft/ft_bubble_sort.o" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/libft/ft_bzero.o" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/libft/ft_capacity.o" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/libft/ft_clear_table.o" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/libft/ft_isalnum.o" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/libft/ft_isalpha.o" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/libft/ft_isascii.o" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/libft/ft_isdigit.o" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/libft/ft_isprint.o" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/libft/ft_isspace.o" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/libft/ft_itoa.o" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/libft/ft_list_len.o" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/libft/ft_lstadd.o" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/libft/ft_lstdel.o" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/libft/ft_lstdelone.o" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/libft/ft_lstiter.o" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/libft/ft_lstmap.o" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/libft/ft_lstnew.o" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/libft/ft_lstpush.o" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/libft/ft_memalloc.o" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/libft/ft_memccpy.o" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/libft/ft_memchr.o" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/libft/ft_memcmp.o" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/libft/ft_memcpy.o" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/libft/ft_memdel.o" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/libft/ft_memmove.o" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/libft/ft_memset.o" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/libft/ft_pstrdel.o" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/libft/ft_putchar.o" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/libft/ft_putchar_fd.o" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/libft/ft_putendl.o" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/libft/ft_putendl_fd.o" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/libft/ft_putnbr.o" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/libft/ft_putnbr_fd.o" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/libft/ft_putstr.o" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/libft/ft_putstr_fd.o" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/libft/ft_strcat.o" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/libft/ft_strchr.o" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/libft/ft_strclr.o" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/libft/ft_strcmp.o" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/libft/ft_strcpy.o" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/libft/ft_strcut.o" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/libft/ft_strdel.o" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/libft/ft_strdup.o" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/libft/ft_strequ.o" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/libft/ft_striter.o" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/libft/ft_striteri.o" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/libft/ft_strjoin.o" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/libft/ft_strlcat.o" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/libft/ft_strlen.o" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/libft/ft_strmap.o" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/libft/ft_strmapi.o" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/libft/ft_strncat.o" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/libft/ft_strncmp.o" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/libft/ft_strncpy.o" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/libft/ft_strndup.o" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/libft/ft_strnequ.o" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/libft/ft_strnew.o" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/libft/ft_strnstr.o" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/libft/ft_strrchr.o" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/libft/ft_strsplit.o" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/libft/ft_strstr.o" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/libft/ft_strsub.o" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/libft/ft_strtrim.o" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/libft/ft_tolower.o" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/libft/ft_toupper.o" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/libft/get_next_line.o" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/libft/libft.a" beforeDir="false" afterPath="$PROJECT_DIR$/libft/libft.a" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/obj/draw.o" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/obj/edit_coordinates.o" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/obj/loop.o" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/obj/main.o" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/obj/menu.o" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/obj/read_map.o" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/src/draw.c" beforeDir="false" afterPath="$PROJECT_DIR$/src/draw.c" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/edit_coordinates.c" beforeDir="false" afterPath="$PROJECT_DIR$/src/edit_coordinates.c" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main.c" beforeDir="false" afterPath="$PROJECT_DIR$/src/main.c" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/menu.c" beforeDir="false" afterPath="$PROJECT_DIR$/src/menu.c" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -185,6 +113,7 @@
       <workItem from="1567599336153" duration="103000" />
       <workItem from="1567599440256" duration="120000" />
       <workItem from="1567599632267" duration="4792000" />
+      <workItem from="1567610155149" duration="742000" />
     </task>
     <servers />
   </component>

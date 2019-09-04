@@ -41,8 +41,3 @@ void	get_color_palette(t_fdf *fdf)
 		}
 	}
 }
-
-void	calc_distance_to_points(t_fdf *fdf)
-{
-
-}

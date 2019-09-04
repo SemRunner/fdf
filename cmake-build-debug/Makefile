@@ -150,6 +150,33 @@ src/draw.c.s:
 	$(MAKE) -f CMakeFiles/fdf_new.dir/build.make CMakeFiles/fdf_new.dir/src/draw.c.s
 .PHONY : src/draw.c.s
 
+src/draw_full.o: src/draw_full.c.o
+
+.PHONY : src/draw_full.o
+
+# target to build an object file
+src/draw_full.c.o:
+	$(MAKE) -f CMakeFiles/fdf_new.dir/build.make CMakeFiles/fdf_new.dir/src/draw_full.c.o
+.PHONY : src/draw_full.c.o
+
+src/draw_full.i: src/draw_full.c.i
+
+.PHONY : src/draw_full.i
+
+# target to preprocess a source file
+src/draw_full.c.i:
+	$(MAKE) -f CMakeFiles/fdf_new.dir/build.make CMakeFiles/fdf_new.dir/src/draw_full.c.i
+.PHONY : src/draw_full.c.i
+
+src/draw_full.s: src/draw_full.c.s
+
+.PHONY : src/draw_full.s
+
+# target to generate assembly for a file
+src/draw_full.c.s:
+	$(MAKE) -f CMakeFiles/fdf_new.dir/build.make CMakeFiles/fdf_new.dir/src/draw_full.c.s
+.PHONY : src/draw_full.c.s
+
 src/edit_coordinates.o: src/edit_coordinates.c.o
 
 .PHONY : src/edit_coordinates.o
@@ -297,6 +324,9 @@ help:
 	@echo "... src/draw.o"
 	@echo "... src/draw.i"
 	@echo "... src/draw.s"
+	@echo "... src/draw_full.o"
+	@echo "... src/draw_full.i"
+	@echo "... src/draw_full.s"
 	@echo "... src/edit_coordinates.o"
 	@echo "... src/edit_coordinates.i"
 	@echo "... src/edit_coordinates.s"

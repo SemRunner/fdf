@@ -125,7 +125,8 @@ void	draw_map(t_fdf *fdf)
 
 	i = -1;
 	get_black(fdf);
-	calc_distance_to_points(fdf);
+	if (fdf->is_color_full == 1)
+		draw_full(fdf);
 	while (++i < fdf->line_count)
 	{
 		j = -1;

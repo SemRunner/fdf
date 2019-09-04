@@ -90,6 +90,9 @@
 		<Unit filename="/Users/smight/Desktop/fdf_new/src/draw.c">
 			<Option target="fdf_new"/>
 		</Unit>
+		<Unit filename="/Users/smight/Desktop/fdf_new/src/draw_full.c">
+			<Option target="fdf_new"/>
+		</Unit>
 		<Unit filename="/Users/smight/Desktop/fdf_new/src/edit_coordinates.c">
 			<Option target="fdf_new"/>
 		</Unit>

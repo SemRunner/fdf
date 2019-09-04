@@ -6,6 +6,11 @@ CMakeFiles/fdf_new.dir/src/draw.c.o
  /Users/smight/Desktop/fdf_new/libft/libft.h
  /Users/smight/Desktop/fdf_new/minilibx_macos/mlx.h
  /Users/smight/Desktop/fdf_new/src/draw.c
+CMakeFiles/fdf_new.dir/src/draw_full.c.o
+ /Users/smight/Desktop/fdf_new/inc/fdf.h
+ /Users/smight/Desktop/fdf_new/libft/libft.h
+ /Users/smight/Desktop/fdf_new/minilibx_macos/mlx.h
+ /Users/smight/Desktop/fdf_new/src/draw_full.c
 CMakeFiles/fdf_new.dir/src/edit_coordinates.c.o
  /Users/smight/Desktop/fdf_new/inc/fdf.h
  /Users/smight/Desktop/fdf_new/libft/libft.h
