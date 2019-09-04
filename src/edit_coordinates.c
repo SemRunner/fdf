@@ -14,14 +14,20 @@
 
 void	rotation_update(t_fdf *fdf, t_point *p)
 {
+	int temp;
+
 	p->x -= WIDTH / 2;
 	p->y -= HIGHT / 2;
-	p->y = p->y * cos(RT_STEP * fdf->x_rotation) + p->z * sin(RT_STEP * fdf->x_rotation);
-	p->z = -p->y * sin(RT_STEP * fdf->x_rotation) + p->z * cos(RT_STEP * fdf->x_rotation);
-	p->x = p->x * cos(RT_STEP * fdf->y_rotation) + p->z * sin(RT_STEP * fdf->y_rotation);
-	p->z = -p->x * sin(RT_STEP * fdf->y_rotation) + p->z * cos(RT_STEP * fdf->y_rotation);
+	p->number *= fdf->height_coeff;
+	temp = p->y;
+	p->y = p->y * cos(RT_STEP * fdf->x_rotation) + p->number * sin(RT_STEP * fdf->x_rotation);
+	p->number = -temp * sin(RT_STEP * fdf->x_rotation) + p->number * cos(RT_STEP * fdf->x_rotation);
+	temp = p->x;
+	p->x = p->x * cos(RT_STEP * fdf->y_rotation) + p->number * sin(RT_STEP * fdf->y_rotation);
+	p->number = -temp * sin(RT_STEP * fdf->y_rotation) + p->number * cos(RT_STEP * fdf->y_rotation);
+	temp = p->x;
 	p->x = p->x * cos(RT_STEP * fdf->z_rotation) - p->y * sin(RT_STEP * fdf->z_rotation);
-	p->y = p->x * sin(RT_STEP * fdf->z_rotation) + p->y * cos(RT_STEP * fdf->z_rotation);
+	p->y = temp * sin(RT_STEP * fdf->z_rotation) + p->y * cos(RT_STEP * fdf->z_rotation);
 	p->x += WIDTH / 2;
 	p->y += HIGHT / 2;
 }

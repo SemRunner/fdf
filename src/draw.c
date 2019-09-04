@@ -31,7 +31,7 @@ int 	get_color(int hight, t_fdf *fdf)
 //		return (0x2ed952);//green
 	int	color;
 
-	color = 0x7F00;
+	color = 0xe4ca00;
 	if (hight > 0)
 		color |= (hight * 250 / fdf->max_height);
 //	else if (hight < 0)
@@ -125,6 +125,7 @@ void	draw_map(t_fdf *fdf)
 
 	i = -1;
 	get_black(fdf);
+	calc_distance_to_points(fdf);
 	while (++i < fdf->line_count)
 	{
 		j = -1;

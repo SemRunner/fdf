@@ -44,6 +44,8 @@ typedef struct	s_fdf
 	void		*win_ptr;
 	void		*img_ptr;
 	int			*mlx_map;
+	int 		*distance_to_points;
+	int 		*point_is_hidden;
 	char		*buff;
 	int			size_line;
 	int 		line_count;
@@ -74,5 +76,7 @@ void	edit_coordinates(t_fdf *fdf, t_point *p1, t_point *p2);
 int 	abs_f(int a);
 void	draw_menu(t_fdf *fdf);
 void	rotation_update(t_fdf *fdf, t_point *p);
+void	calc_distance_to_points(t_fdf *fdf);
+void	get_color_palette(t_fdf *fdf);
 
 #endif

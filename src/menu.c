@@ -27,17 +27,22 @@ void	get_color_palette(t_fdf *fdf)
 	int	j;
 
 	i = 0;
-	fdf->max_height = fdf->points[0][0].z;
-	fdf->min_height = fdf->points[0][0].z;
+	fdf->max_height = 1;
+	fdf->min_height = -1;
 	while (++i < fdf->line_count)
 	{
 		j = -1;
 		while (++j < fdf->column_count)
 		{
-			if (fdf->points[i][j].z > fdf->max_height)
-				fdf->max_height = fdf->points[i][j].z;
-			else if (fdf->points[i][j].z < fdf->min_height)
-				fdf->min_height = fdf->points[i][j].z;
+			if (fdf->points[i][j].number > fdf->max_height)
+				fdf->max_height = fdf->points[i][j].number;
+			else if (fdf->points[i][j].number < fdf->min_height)
+				fdf->min_height = fdf->points[i][j].number;
 		}
 	}
+}
+
+void	calc_distance_to_points(t_fdf *fdf)
+{
+
 }
