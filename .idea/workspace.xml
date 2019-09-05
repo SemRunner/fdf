@@ -14,8 +14,9 @@
     <list default="true" id="84bee0d8-167f-4b09-bca5-b57adc5479d3" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/fdf_new.dir/C.includecache" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/fdf_new.dir/C.includecache" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/fdf_new.dir/src/test/matrix_operations.c.o" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/matrix_operations.c" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/matrix_operations.c" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/fdf_new.dir/src/test/calculations.c.o" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/fdf_new.dir/src/test/calculations.c.o" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/fdf_new" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/fdf_new" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/calculations.c" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/calculations.c" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -93,7 +94,7 @@
       <workItem from="1567599440256" duration="120000" />
       <workItem from="1567599632267" duration="4792000" />
       <workItem from="1567610155149" duration="1277000" />
-      <workItem from="1567677470541" duration="10395000" />
+      <workItem from="1567677470541" duration="11396000" />
     </task>
     <servers />
   </component>
