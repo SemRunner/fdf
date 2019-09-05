@@ -20,38 +20,27 @@ void	rotation_update(t_fdf *fdf, t_point *p)
 	p->y -= HIGHT / 2;
 	p->number *= fdf->height_coeff;
 	temp = p->y;
-	p->y = p->y * cos(RT_STEP * fdf->x_rotation) + p->number * sin(RT_STEP * fdf->x_rotation);
-	p->number = -temp * sin(RT_STEP * fdf->x_rotation) + p->number * cos(RT_STEP * fdf->x_rotation);
+	p->y = p->y * fdf->cos_x + p->number * fdf->sin_x;
+	p->number = -temp * fdf->sin_x + p->number * fdf->cos_x;
 	temp = p->x;
-	p->x = p->x * cos(RT_STEP * fdf->y_rotation) + p->number * sin(RT_STEP * fdf->y_rotation);
-	p->number = -temp * sin(RT_STEP * fdf->y_rotation) + p->number * cos(RT_STEP * fdf->y_rotation);
+	p->x = p->x * fdf->cos_y + p->number * fdf->sin_y;
+	p->number = -temp * fdf->sin_y + p->number * fdf->cos_y;
 	temp = p->x;
-	p->x = p->x * cos(RT_STEP * fdf->z_rotation) - p->y * sin(RT_STEP * fdf->z_rotation);
-	p->y = temp * sin(RT_STEP * fdf->z_rotation) + p->y * cos(RT_STEP * fdf->z_rotation);
+	p->x = p->x * fdf->cos_z - p->y * fdf->sin_z;
+	p->y = temp * fdf->sin_z + p->y * fdf->cos_z;
 	p->x += WIDTH / 2;
 	p->y += HIGHT / 2;
 }
 
-void	iso_projection_update(t_fdf *fdf, t_point *p)
+void	iso_projection_update(t_fdf *fdf)
 {
-	int old_x;
-	int	old_y;
-
-	old_x = p->x;
-	old_y = p->y;
-	p->x = (old_x - old_y) * cos(0.523599);
-	p->y = -p->number * RATE * fdf->height_coeff + (old_x + old_y) * sin(0.523599);
-	p->x += 600;
-	p->y -= 200;
+	fdf->x_rotation = -0.615472907;
+	fdf->y_rotation = -0.785398;
+	fdf->z_rotation = 0;
 }
 
 void	edit_coordinates(t_fdf *fdf, t_point *p1, t_point *p2)
 {
-	if (fdf->projection == ISO)
-	{
-		iso_projection_update(fdf, p1);
-		iso_projection_update(fdf, p2);
-	}
 	rotation_update(fdf, p1);
 	rotation_update(fdf, p2);
 	p1->x += fdf->width_shift;

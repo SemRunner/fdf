@@ -12,22 +12,12 @@
 
 #include "../inc/fdf.h"
 
-void	draw_full(t_fdf *fdf)
+void	calc_angle_params(t_fdf *fdf)
 {
-//	int	i;
-//	int j;
-//
-//	i = -1;
-//	get_black(fdf);
-//	while (++i < fdf->line_count)
-//	{
-//		j = -1;
-//		while (++j < fdf->column_count)
-//		{
-//			if (j < fdf->column_count - 1)//по горизонтали
-//				draw_line(fdf, fdf->points[i][j], fdf->points[i][j + 1]);
-//			if (i < fdf->line_count - 1)//по вертикали
-//				draw_line(fdf, fdf->points[i][j], fdf->points[i + 1][j]);
-//		}
-//	}
+	fdf->cos_x = cos(RT_STEP * fdf->x_rotation);
+	fdf->sin_x = sin(RT_STEP * fdf->x_rotation);
+	fdf->cos_y = cos(RT_STEP * fdf->y_rotation);
+	fdf->sin_y = sin(RT_STEP * fdf->y_rotation);
+	fdf->cos_z = cos(RT_STEP * fdf->z_rotation);
+	fdf->sin_z = sin(RT_STEP * fdf->z_rotation);
 }

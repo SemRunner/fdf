@@ -37,17 +37,17 @@ void	to_start(t_fdf *fdf)
 void	write_rotation(t_fdf *fdf, int key)
 {
 	if (key == 92)
-		fdf->x_rotation = (fdf->x_rotation + 1) % (int)(54 / M_PI);
+		fdf->x_rotation = (fdf->x_rotation + 1);
 	else if (key == 88)
-		fdf->x_rotation = (fdf->x_rotation - 1) % (int)(54 / M_PI);
+		fdf->x_rotation = (fdf->x_rotation - 1);
 	else if (key == 91)
-		fdf->y_rotation = (fdf->y_rotation + 1) % (int)(54 / M_PI);
+		fdf->y_rotation = (fdf->y_rotation + 1);
 	else if (key == 87)
-		fdf->y_rotation = (fdf->y_rotation - 1) % (int)(54 / M_PI);
+		fdf->y_rotation = (fdf->y_rotation - 1);
 	else if (key == 89)
-		fdf->z_rotation = (fdf->z_rotation + 1) % (int)(54 / M_PI);
+		fdf->z_rotation = (fdf->z_rotation + 1);
 	else if (key == 86)
-		fdf->z_rotation = (fdf->z_rotation - 1) % (int)(54 / M_PI);
+		fdf->z_rotation = (fdf->z_rotation - 1);
 }
 
 int		deal_key(int key, void *param)
@@ -76,14 +76,13 @@ int		deal_key(int key, void *param)
 	draw_map((t_fdf*)param);//каждый раз после кнопок рисую мапу
 	mlx_put_image_to_window(((t_fdf*)param)->mlx_ptr, ((t_fdf*)param)->win_ptr,\
 	((t_fdf*)param)->img_ptr, 0, 0);
-	ft_printf("%d\n", ((t_fdf*)param)->width_shift);
 	draw_menu(param);
 	return (0);
 }
 
 void	loop(t_fdf *fdf)
 {
-	//fdf->projection = ISO;
+	fdf->projection = PARALLEL;
 	draw_map(fdf);
 	mlx_hook(fdf->win_ptr, 2, 0, deal_key, fdf);//ловлю с клавы esc
 	mlx_put_image_to_window(fdf->mlx_ptr, fdf->win_ptr, fdf->img_ptr, 0, 0);

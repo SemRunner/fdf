@@ -44,8 +44,6 @@ typedef struct	s_fdf
 	void		*win_ptr;
 	void		*img_ptr;
 	int			*mlx_map;
-	int 		*distance_to_points;
-	int 		*point_is_hidden;
 	char		*buff;
 	int			size_line;
 	int 		line_count;
@@ -55,9 +53,15 @@ typedef struct	s_fdf
 	int 		width_shift;
 	int 		hight_shift;
 	char		projection;
-	int 		x_rotation;
-	int 		y_rotation;
-	int 		z_rotation;
+	double 		x_rotation;
+	double 		y_rotation;
+	double 		z_rotation;
+	double		cos_x;
+	double		sin_x;
+	double		cos_y;
+	double		sin_y;
+	double		cos_z;
+	double		sin_z;
 	int 		height_coeff;
 	int 		max_height;
 	int 		min_height;
@@ -71,7 +75,6 @@ void	loop(t_fdf *fdf);
 void	end_mlx(t_fdf *fdf);
 int		read_map(t_fdf *fdf, char *filename);
 void	draw_map(t_fdf *fdf);
-int		get_line_count(t_fdf *fdf);
 void	print_map(t_fdf *fdf);
 void	edit_coordinates(t_fdf *fdf, t_point *p1, t_point *p2);
 int 	abs_f(int a);
@@ -79,5 +82,7 @@ void	draw_menu(t_fdf *fdf);
 void	rotation_update(t_fdf *fdf, t_point *p);
 void	get_color_palette(t_fdf *fdf);
 void	draw_full(t_fdf *fdf);
+void	calc_angle_params(t_fdf *fdf);
+void	iso_projection_update(t_fdf *fdf);
 
 #endif

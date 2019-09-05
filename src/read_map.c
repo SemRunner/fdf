@@ -68,11 +68,11 @@ int 	point_count(char **table, t_fdf *fdf)
 	i = 0;
 	while (table[i])
 		i++;
-	if (fdf->column_count > 0 && i != fdf->column_count)
-	{
-		//чистка
-		exit(0);
-	}
+//	if (fdf->column_count > 0 && i != fdf->column_count)
+//	{
+//		//чистка
+//		exit(0);
+//	}
 	//i++;
 	fdf->column_count == 0 ? fdf->column_count = i : 0;
 	return (i);

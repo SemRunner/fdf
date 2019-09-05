@@ -44,7 +44,7 @@ int		main(int c, char **v)
 
 	if (c != 2)
 		return (error(1));
-	if (!read_map(&fdf, v[1]))//читаю мапу и заполняю массив double
+	if (!read_map(&fdf, v[1]))//читаю мапу и заполняю массив
 		return (error(2));
 	fdf.height_coeff = 1;
 	fdf.min_height = 1;

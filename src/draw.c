@@ -125,8 +125,11 @@ void	draw_map(t_fdf *fdf)
 
 	i = -1;
 	get_black(fdf);
-	if (fdf->is_color_full == 1)
-		draw_full(fdf);
+	if (fdf->projection == ISO)
+		iso_projection_update(fdf);
+//	if (fdf->is_color_full == 1)
+//		draw_full(fdf);
+	calc_angle_params(fdf);
 	while (++i < fdf->line_count)
 	{
 		j = -1;

@@ -19,6 +19,7 @@ void	draw_menu(t_fdf *fdf)
 	mlx_string_put(fdf->mlx_ptr, fdf->win_ptr, 30, 90, 0xf54242, "rotation along the y axis 5 - 8");
 	mlx_string_put(fdf->mlx_ptr, fdf->win_ptr, 30, 120, 0xf54242, "rotation along the z axis 4 - 7");
 	mlx_string_put(fdf->mlx_ptr, fdf->win_ptr, 30, 150, 0xf54242, "edit height diff + -");
+	mlx_string_put(fdf->mlx_ptr, fdf->win_ptr, 30, 180, 0xf54242, "select projection: 1 - iso");
 }
 
 void	get_color_palette(t_fdf *fdf)
