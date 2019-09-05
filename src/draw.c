@@ -127,8 +127,7 @@ void	draw_map(t_fdf *fdf)
 	get_black(fdf);
 	if (fdf->projection == ISO)
 		iso_projection_update(fdf);
-//	if (fdf->is_color_full == 1)
-//		draw_full(fdf);
+	extrapolation(fdf);
 	calc_angle_params(fdf);
 	while (++i < fdf->line_count)
 	{

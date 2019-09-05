@@ -11,6 +11,9 @@ set(CMAKE_DEPENDS_CHECK_C
   "/Users/smight/Desktop/fdf_new/src/main.c" "/Users/smight/Desktop/fdf_new/cmake-build-debug/CMakeFiles/fdf_new.dir/src/main.c.o"
   "/Users/smight/Desktop/fdf_new/src/menu.c" "/Users/smight/Desktop/fdf_new/cmake-build-debug/CMakeFiles/fdf_new.dir/src/menu.c.o"
   "/Users/smight/Desktop/fdf_new/src/read_map.c" "/Users/smight/Desktop/fdf_new/cmake-build-debug/CMakeFiles/fdf_new.dir/src/read_map.c.o"
+  "/Users/smight/Desktop/fdf_new/src/test/calculations.c" "/Users/smight/Desktop/fdf_new/cmake-build-debug/CMakeFiles/fdf_new.dir/src/test/calculations.c.o"
+  "/Users/smight/Desktop/fdf_new/src/test/extrapolation.c" "/Users/smight/Desktop/fdf_new/cmake-build-debug/CMakeFiles/fdf_new.dir/src/test/extrapolation.c.o"
+  "/Users/smight/Desktop/fdf_new/src/test/matrix_operations.c" "/Users/smight/Desktop/fdf_new/cmake-build-debug/CMakeFiles/fdf_new.dir/src/test/matrix_operations.c.o"
   )
 set(CMAKE_C_COMPILER_ID "AppleClang")
 

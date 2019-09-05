@@ -148,6 +148,45 @@ CMakeFiles/fdf_new.dir/src/draw_full.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/fdf_new.dir/src/draw_full.c.s"
 	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /Users/smight/Desktop/fdf_new/src/draw_full.c -o CMakeFiles/fdf_new.dir/src/draw_full.c.s
 
+CMakeFiles/fdf_new.dir/src/test/extrapolation.c.o: CMakeFiles/fdf_new.dir/flags.make
+CMakeFiles/fdf_new.dir/src/test/extrapolation.c.o: ../src/test/extrapolation.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/smight/Desktop/fdf_new/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_8) "Building C object CMakeFiles/fdf_new.dir/src/test/extrapolation.c.o"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/fdf_new.dir/src/test/extrapolation.c.o   -c /Users/smight/Desktop/fdf_new/src/test/extrapolation.c
+
+CMakeFiles/fdf_new.dir/src/test/extrapolation.c.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/fdf_new.dir/src/test/extrapolation.c.i"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /Users/smight/Desktop/fdf_new/src/test/extrapolation.c > CMakeFiles/fdf_new.dir/src/test/extrapolation.c.i
+
+CMakeFiles/fdf_new.dir/src/test/extrapolation.c.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/fdf_new.dir/src/test/extrapolation.c.s"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /Users/smight/Desktop/fdf_new/src/test/extrapolation.c -o CMakeFiles/fdf_new.dir/src/test/extrapolation.c.s
+
+CMakeFiles/fdf_new.dir/src/test/calculations.c.o: CMakeFiles/fdf_new.dir/flags.make
+CMakeFiles/fdf_new.dir/src/test/calculations.c.o: ../src/test/calculations.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/smight/Desktop/fdf_new/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_9) "Building C object CMakeFiles/fdf_new.dir/src/test/calculations.c.o"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/fdf_new.dir/src/test/calculations.c.o   -c /Users/smight/Desktop/fdf_new/src/test/calculations.c
+
+CMakeFiles/fdf_new.dir/src/test/calculations.c.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/fdf_new.dir/src/test/calculations.c.i"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /Users/smight/Desktop/fdf_new/src/test/calculations.c > CMakeFiles/fdf_new.dir/src/test/calculations.c.i
+
+CMakeFiles/fdf_new.dir/src/test/calculations.c.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/fdf_new.dir/src/test/calculations.c.s"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /Users/smight/Desktop/fdf_new/src/test/calculations.c -o CMakeFiles/fdf_new.dir/src/test/calculations.c.s
+
+CMakeFiles/fdf_new.dir/src/test/matrix_operations.c.o: CMakeFiles/fdf_new.dir/flags.make
+CMakeFiles/fdf_new.dir/src/test/matrix_operations.c.o: ../src/test/matrix_operations.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/smight/Desktop/fdf_new/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_10) "Building C object CMakeFiles/fdf_new.dir/src/test/matrix_operations.c.o"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/fdf_new.dir/src/test/matrix_operations.c.o   -c /Users/smight/Desktop/fdf_new/src/test/matrix_operations.c
+
+CMakeFiles/fdf_new.dir/src/test/matrix_operations.c.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/fdf_new.dir/src/test/matrix_operations.c.i"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /Users/smight/Desktop/fdf_new/src/test/matrix_operations.c > CMakeFiles/fdf_new.dir/src/test/matrix_operations.c.i
+
+CMakeFiles/fdf_new.dir/src/test/matrix_operations.c.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/fdf_new.dir/src/test/matrix_operations.c.s"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /Users/smight/Desktop/fdf_new/src/test/matrix_operations.c -o CMakeFiles/fdf_new.dir/src/test/matrix_operations.c.s
+
 # Object files for target fdf_new
 fdf_new_OBJECTS = \
 "CMakeFiles/fdf_new.dir/src/main.c.o" \
@@ -156,7 +195,10 @@ fdf_new_OBJECTS = \
 "CMakeFiles/fdf_new.dir/src/loop.c.o" \
 "CMakeFiles/fdf_new.dir/src/edit_coordinates.c.o" \
 "CMakeFiles/fdf_new.dir/src/menu.c.o" \
-"CMakeFiles/fdf_new.dir/src/draw_full.c.o"
+"CMakeFiles/fdf_new.dir/src/draw_full.c.o" \
+"CMakeFiles/fdf_new.dir/src/test/extrapolation.c.o" \
+"CMakeFiles/fdf_new.dir/src/test/calculations.c.o" \
+"CMakeFiles/fdf_new.dir/src/test/matrix_operations.c.o"
 
 # External object files for target fdf_new
 fdf_new_EXTERNAL_OBJECTS =
@@ -168,11 +210,14 @@ fdf_new: CMakeFiles/fdf_new.dir/src/loop.c.o
 fdf_new: CMakeFiles/fdf_new.dir/src/edit_coordinates.c.o
 fdf_new: CMakeFiles/fdf_new.dir/src/menu.c.o
 fdf_new: CMakeFiles/fdf_new.dir/src/draw_full.c.o
+fdf_new: CMakeFiles/fdf_new.dir/src/test/extrapolation.c.o
+fdf_new: CMakeFiles/fdf_new.dir/src/test/calculations.c.o
+fdf_new: CMakeFiles/fdf_new.dir/src/test/matrix_operations.c.o
 fdf_new: CMakeFiles/fdf_new.dir/build.make
 fdf_new: ../libft/libftprintf.a
 fdf_new: ../libft/libft.a
 fdf_new: CMakeFiles/fdf_new.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/Users/smight/Desktop/fdf_new/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_8) "Linking C executable fdf_new"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/Users/smight/Desktop/fdf_new/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_11) "Linking C executable fdf_new"
 	$(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/fdf_new.dir/link.txt --verbose=$(VERBOSE)
 
 # Rule to build all files generated by this target.

@@ -67,6 +67,12 @@ typedef struct	s_fdf
 	int 		min_height;
 	int 		is_color_full;
 	t_point		**points;
+	/** EXTRAPOLATION */
+	int			is_no_square;
+	int 		matrix_size;
+	double 		**lin_matrix;
+	double		*free_m;
+	double		*polynom_coeffs;
 }				t_fdf;
 
 int		ft_printf(char *str, ...);
@@ -84,5 +90,11 @@ void	get_color_palette(t_fdf *fdf);
 void	draw_full(t_fdf *fdf);
 void	calc_angle_params(t_fdf *fdf);
 void	iso_projection_update(t_fdf *fdf);
+
+void	extrapolation(t_fdf *fdf);
+void	solve_matrix(t_fdf *fdf);
+void	matrix_addition_lines(t_fdf *fdf, int l1, int l2, double coeff);
+void	matrix_mult_to_const(t_fdf *fdf, int line, double coeff);
+void	sort_matrix(t_fdf *fdf);
 
 #endif

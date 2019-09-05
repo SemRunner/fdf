@@ -108,6 +108,15 @@
 		<Unit filename="/Users/smight/Desktop/fdf_new/src/read_map.c">
 			<Option target="fdf_new"/>
 		</Unit>
+		<Unit filename="/Users/smight/Desktop/fdf_new/src/test/calculations.c">
+			<Option target="fdf_new"/>
+		</Unit>
+		<Unit filename="/Users/smight/Desktop/fdf_new/src/test/extrapolation.c">
+			<Option target="fdf_new"/>
+		</Unit>
+		<Unit filename="/Users/smight/Desktop/fdf_new/src/test/matrix_operations.c">
+			<Option target="fdf_new"/>
+		</Unit>
 		<Unit filename="/Users/smight/Desktop/fdf_new/CMakeLists.txt">
 			<Option virtualFolder="CMake Files\"/>
 		</Unit>

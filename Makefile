@@ -6,7 +6,9 @@ FILES = main.c \
         draw.c \
         edit_coordinates.c \
         menu.c \
-        draw_full.c
+        draw_full.c \
+        test/calculations.c \
+        test/extrapolation.c
 
 SRC = $(addprefix src/,$(FILES))
 

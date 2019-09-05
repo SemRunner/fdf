@@ -36,3 +36,18 @@ CMakeFiles/fdf_new.dir/src/read_map.c.o: ../libft/libft.h
 CMakeFiles/fdf_new.dir/src/read_map.c.o: ../minilibx_macos/mlx.h
 CMakeFiles/fdf_new.dir/src/read_map.c.o: ../src/read_map.c
 
+CMakeFiles/fdf_new.dir/src/test/calculations.c.o: ../inc/fdf.h
+CMakeFiles/fdf_new.dir/src/test/calculations.c.o: ../libft/libft.h
+CMakeFiles/fdf_new.dir/src/test/calculations.c.o: ../minilibx_macos/mlx.h
+CMakeFiles/fdf_new.dir/src/test/calculations.c.o: ../src/test/calculations.c
+
+CMakeFiles/fdf_new.dir/src/test/extrapolation.c.o: ../inc/fdf.h
+CMakeFiles/fdf_new.dir/src/test/extrapolation.c.o: ../libft/libft.h
+CMakeFiles/fdf_new.dir/src/test/extrapolation.c.o: ../minilibx_macos/mlx.h
+CMakeFiles/fdf_new.dir/src/test/extrapolation.c.o: ../src/test/extrapolation.c
+
+CMakeFiles/fdf_new.dir/src/test/matrix_operations.c.o: ../inc/fdf.h
+CMakeFiles/fdf_new.dir/src/test/matrix_operations.c.o: ../libft/libft.h
+CMakeFiles/fdf_new.dir/src/test/matrix_operations.c.o: ../minilibx_macos/mlx.h
+CMakeFiles/fdf_new.dir/src/test/matrix_operations.c.o: ../src/test/matrix_operations.c
+

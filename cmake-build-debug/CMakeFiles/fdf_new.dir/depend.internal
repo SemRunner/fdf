@@ -36,3 +36,18 @@ CMakeFiles/fdf_new.dir/src/read_map.c.o
  /Users/smight/Desktop/fdf_new/libft/libft.h
  /Users/smight/Desktop/fdf_new/minilibx_macos/mlx.h
  /Users/smight/Desktop/fdf_new/src/read_map.c
+CMakeFiles/fdf_new.dir/src/test/calculations.c.o
+ /Users/smight/Desktop/fdf_new/inc/fdf.h
+ /Users/smight/Desktop/fdf_new/libft/libft.h
+ /Users/smight/Desktop/fdf_new/minilibx_macos/mlx.h
+ /Users/smight/Desktop/fdf_new/src/test/calculations.c
+CMakeFiles/fdf_new.dir/src/test/extrapolation.c.o
+ /Users/smight/Desktop/fdf_new/inc/fdf.h
+ /Users/smight/Desktop/fdf_new/libft/libft.h
+ /Users/smight/Desktop/fdf_new/minilibx_macos/mlx.h
+ /Users/smight/Desktop/fdf_new/src/test/extrapolation.c
+CMakeFiles/fdf_new.dir/src/test/matrix_operations.c.o
+ /Users/smight/Desktop/fdf_new/inc/fdf.h
+ /Users/smight/Desktop/fdf_new/libft/libft.h
+ /Users/smight/Desktop/fdf_new/minilibx_macos/mlx.h
+ /Users/smight/Desktop/fdf_new/src/test/matrix_operations.c

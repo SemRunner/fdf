@@ -312,6 +312,87 @@ src/read_map.c.s:
 	$(MAKE) -f CMakeFiles/fdf_new.dir/build.make CMakeFiles/fdf_new.dir/src/read_map.c.s
 .PHONY : src/read_map.c.s
 
+src/test/calculations.o: src/test/calculations.c.o
+
+.PHONY : src/test/calculations.o
+
+# target to build an object file
+src/test/calculations.c.o:
+	$(MAKE) -f CMakeFiles/fdf_new.dir/build.make CMakeFiles/fdf_new.dir/src/test/calculations.c.o
+.PHONY : src/test/calculations.c.o
+
+src/test/calculations.i: src/test/calculations.c.i
+
+.PHONY : src/test/calculations.i
+
+# target to preprocess a source file
+src/test/calculations.c.i:
+	$(MAKE) -f CMakeFiles/fdf_new.dir/build.make CMakeFiles/fdf_new.dir/src/test/calculations.c.i
+.PHONY : src/test/calculations.c.i
+
+src/test/calculations.s: src/test/calculations.c.s
+
+.PHONY : src/test/calculations.s
+
+# target to generate assembly for a file
+src/test/calculations.c.s:
+	$(MAKE) -f CMakeFiles/fdf_new.dir/build.make CMakeFiles/fdf_new.dir/src/test/calculations.c.s
+.PHONY : src/test/calculations.c.s
+
+src/test/extrapolation.o: src/test/extrapolation.c.o
+
+.PHONY : src/test/extrapolation.o
+
+# target to build an object file
+src/test/extrapolation.c.o:
+	$(MAKE) -f CMakeFiles/fdf_new.dir/build.make CMakeFiles/fdf_new.dir/src/test/extrapolation.c.o
+.PHONY : src/test/extrapolation.c.o
+
+src/test/extrapolation.i: src/test/extrapolation.c.i
+
+.PHONY : src/test/extrapolation.i
+
+# target to preprocess a source file
+src/test/extrapolation.c.i:
+	$(MAKE) -f CMakeFiles/fdf_new.dir/build.make CMakeFiles/fdf_new.dir/src/test/extrapolation.c.i
+.PHONY : src/test/extrapolation.c.i
+
+src/test/extrapolation.s: src/test/extrapolation.c.s
+
+.PHONY : src/test/extrapolation.s
+
+# target to generate assembly for a file
+src/test/extrapolation.c.s:
+	$(MAKE) -f CMakeFiles/fdf_new.dir/build.make CMakeFiles/fdf_new.dir/src/test/extrapolation.c.s
+.PHONY : src/test/extrapolation.c.s
+
+src/test/matrix_operations.o: src/test/matrix_operations.c.o
+
+.PHONY : src/test/matrix_operations.o
+
+# target to build an object file
+src/test/matrix_operations.c.o:
+	$(MAKE) -f CMakeFiles/fdf_new.dir/build.make CMakeFiles/fdf_new.dir/src/test/matrix_operations.c.o
+.PHONY : src/test/matrix_operations.c.o
+
+src/test/matrix_operations.i: src/test/matrix_operations.c.i
+
+.PHONY : src/test/matrix_operations.i
+
+# target to preprocess a source file
+src/test/matrix_operations.c.i:
+	$(MAKE) -f CMakeFiles/fdf_new.dir/build.make CMakeFiles/fdf_new.dir/src/test/matrix_operations.c.i
+.PHONY : src/test/matrix_operations.c.i
+
+src/test/matrix_operations.s: src/test/matrix_operations.c.s
+
+.PHONY : src/test/matrix_operations.s
+
+# target to generate assembly for a file
+src/test/matrix_operations.c.s:
+	$(MAKE) -f CMakeFiles/fdf_new.dir/build.make CMakeFiles/fdf_new.dir/src/test/matrix_operations.c.s
+.PHONY : src/test/matrix_operations.c.s
+
 # Help Target
 help:
 	@echo "The following are some of the valid targets for this Makefile:"
@@ -342,6 +423,15 @@ help:
 	@echo "... src/read_map.o"
 	@echo "... src/read_map.i"
 	@echo "... src/read_map.s"
+	@echo "... src/test/calculations.o"
+	@echo "... src/test/calculations.i"
+	@echo "... src/test/calculations.s"
+	@echo "... src/test/extrapolation.o"
+	@echo "... src/test/extrapolation.i"
+	@echo "... src/test/extrapolation.s"
+	@echo "... src/test/matrix_operations.o"
+	@echo "... src/test/matrix_operations.i"
+	@echo "... src/test/matrix_operations.s"
 .PHONY : help
 
 
