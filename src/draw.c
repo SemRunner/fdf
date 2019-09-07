@@ -23,7 +23,18 @@ void	get_black(t_fdf *fdf)
 		fdf->mlx_map[i] = 0x000000;
 }
 
-int 	get_color(int hight, t_fdf *fdf)
+void	get_min_int_map(t_fdf *fdf)
+{
+	int	i;
+	int len;
+
+	i = -1;
+	len = WIDTH * HIGHT;
+	while (++i < len)
+		fdf->mlx_map[i] = INT8_MIN;
+}
+
+int 	get_color(int hight, t_fdf *fdf, int old)
 {
 //	if (hight >= 5)
 //		return (0x8f0306);//red
@@ -31,11 +42,13 @@ int 	get_color(int hight, t_fdf *fdf)
 //		return (0x2ed952);//green
 	int	color;
 
-	color = 0xe4ca00;
-	if (hight > 0)
-		color |= (hight * 250 / fdf->max_height);
+	color = 0x800000;
+	if (hight >= 0)
+		color |= ((hight *  256 / fdf->max_height) << 2);
 //	else if (hight < 0)
 //		color |= (hight * 250 / -fdf->min_height);
+	if (old > color)
+		return old;
 	return color;
 }
 
@@ -58,7 +71,8 @@ void	draw_to_x(t_fdf *fdf, t_point p1, t_point p2)//p1.x <= p2.x всегда
 	while (p1.x < p2.x)
 	{
 		if (p1.x >= 0 && p1.x < WIDTH && p1.y >= 0 && p1.y < HIGHT)//если координата реальна
-			fdf->mlx_map[WIDTH * p1.y + p1.x] = get_color((abs_f(p1.z) + abs_f(p2.z)) / 2, fdf);
+			fdf->mlx_map[WIDTH * p1.y + p1.x] =
+					get_color((abs_f(p1.z) + abs_f(p2.z)) / 2, fdf, fdf->mlx_map[WIDTH * p1.y + p1.x]);
 		error += dy;
 		if (2 * error >= dx)
 		{
@@ -83,7 +97,8 @@ void	draw_to_y(t_fdf *fdf, t_point p1, t_point p2)//p1.y <= p2.y всегда
 	while (p1.y < p2.y)
 	{
 		if (p1.x >= 0 && p1.x < WIDTH && p1.y >= 0 && p1.y < HIGHT)//если координата реальна
-			fdf->mlx_map[WIDTH * p1.y + p1.x] = get_color((abs_f(p1.number) + abs_f(p2.number)) / 2, fdf);
+			fdf->mlx_map[WIDTH * p1.y + p1.x] =
+					get_color((abs_f(p1.z) + abs_f(p2.z)) / 2, fdf, fdf->mlx_map[WIDTH * p1.y + p1.x]);
 		error += dx;
 		if (2 * error >= dy)
 		{
@@ -127,7 +142,7 @@ void	draw_map(t_fdf *fdf)
 	get_black(fdf);
 	if (fdf->projection == ISO)
 		iso_projection_update(fdf);
-	extrapolation(fdf);
+	//extrapolation(fdf);
 	calc_angle_params(fdf);
 	while (++i < fdf->line_count)
 	{

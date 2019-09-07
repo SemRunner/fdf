@@ -12,7 +12,7 @@
 
 #include "../inc/fdf.h"
 
-void	draw_menu(t_fdf *fdf)
+void		draw_menu(t_fdf *fdf)
 {
 	mlx_string_put(fdf->mlx_ptr, fdf->win_ptr, 30, 30, 0xf54242, "MENU:");
 	mlx_string_put(fdf->mlx_ptr, fdf->win_ptr, 30, 60, 0xf54242, "rotation along the x axis 6 - 9");
@@ -22,12 +22,32 @@ void	draw_menu(t_fdf *fdf)
 	mlx_string_put(fdf->mlx_ptr, fdf->win_ptr, 30, 180, 0xf54242, "select projection: 1 - iso");
 }
 
-void	get_color_palette(t_fdf *fdf)
+static void	update_width(t_fdf *fdf)
 {
 	int	i;
 	int	j;
 
-	i = 0;
+	i = -1;
+	while (++i < fdf->line_count)
+	{
+		j = -1;
+		while (++j < fdf->column_count)
+		{
+			if (fdf->points[i][j].number > 0)
+				fdf->points[i][j].number = (fdf->points[i][j].number * CONST_HIGHT) / fdf->max_height;
+			else if (fdf->points[i][j].number < 0)
+				fdf->points[i][j].number = (fdf->points[i][j].number * CONST_HIGHT) / fdf->min_height;
+			fdf->points[i][j].z = fdf->points[i][j].number;
+		}
+	}
+}
+
+void		get_color_palette(t_fdf *fdf)
+{
+	int	i;
+	int	j;
+
+	i = -1;
 	fdf->max_height = 1;
 	fdf->min_height = -1;
 	while (++i < fdf->line_count)
@@ -41,4 +61,5 @@ void	get_color_palette(t_fdf *fdf)
 				fdf->min_height = fdf->points[i][j].number;
 		}
 	}
+	update_width(fdf);
 }

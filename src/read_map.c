@@ -130,6 +130,6 @@ int		read_map(t_fdf *fdf, char *filename)
 		}
 	close(fdf->fd);
 	update_coordinates(fdf);
-	print_map(fdf);
+	//print_map(fdf);
 	return (1);
 }

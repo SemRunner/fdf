@@ -83,6 +83,7 @@ int		deal_key(int key, void *param)
 void	loop(t_fdf *fdf)
 {
 	fdf->projection = PARALLEL;
+	to_start(fdf);
 	draw_map(fdf);
 	mlx_hook(fdf->win_ptr, 2, 0, deal_key, fdf);//ловлю с клавы esc
 	mlx_put_image_to_window(fdf->mlx_ptr, fdf->win_ptr, fdf->img_ptr, 0, 0);

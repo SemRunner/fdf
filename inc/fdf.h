@@ -28,6 +28,7 @@
 # define RATE 5
 # define PARALLEL 0
 # define RT_STEP M_PI / 8
+# define CONST_HIGHT 350
 
 typedef struct	s_point
 {
