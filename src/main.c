@@ -33,9 +33,15 @@ void	initialize_mlx(t_fdf *fdf, char *name)
 
 void	end_mlx(t_fdf *fdf)
 {
-	mlx_destroy_image(fdf->mlx_ptr, fdf->img_ptr);//чищу имейдж
-	//mlx_destroy_window(fdf->mlx_ptr, fdf->win_ptr);//чищу окно ????почему сега????
+	int i;
 
+	mlx_destroy_image(fdf->mlx_ptr, fdf->img_ptr);//чищу имейдж
+	mlx_destroy_window(fdf->mlx_ptr, fdf->win_ptr);//чищу окно ????почему сега????
+	i = -1;
+	while (fdf->points && ++i < fdf->line_count)
+		ft_memdel((void**)&fdf->points[i]);
+	ft_memdel((void**)&fdf->points);
+	sleep(20);
 	exit(0);
 }
 
@@ -53,7 +59,5 @@ int		main(int c, char **v)
 	get_color_palette(&fdf);
 	initialize_mlx(&fdf, v[1]);
 	loop(&fdf);
-	//end_mlx(&fdf);
-	//ft_memdel((void**)&fdf.source_map);
 	return (0);
 }

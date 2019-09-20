@@ -53,11 +53,7 @@ void	write_rotation(t_fdf *fdf, int key)
 int		deal_key(int key, void *param)
 {
 	if (key == ESC)
-	{
-		mlx_destroy_window(((t_fdf*)param)->mlx_ptr, ((t_fdf*)param)->win_ptr);
-
 		end_mlx(param);
-	}
 	else if (key == PUT)
 		mlx_put_image_to_window(((t_fdf*)param)->mlx_ptr, ((t_fdf*)param)->win_ptr, ((t_fdf*)param)->img_ptr, 0, 0);
 	else if (key >= 123 && key <= 126)

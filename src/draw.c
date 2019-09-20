@@ -142,12 +142,11 @@ void	draw_map(t_fdf *fdf)
 	get_black(fdf);
 	if (fdf->projection == ISO)
 		iso_projection_update(fdf);
-	//extrapolation(fdf);
 	calc_angle_params(fdf);
 	while (++i < fdf->line_count)
 	{
 		j = -1;
-		while (++j < fdf->column_count)
+		while (++j < fdf->points[i][0].line_len)
 		{
 			if (j < fdf->column_count - 1)//по горизонтали
 				draw_line(fdf, fdf->points[i][j], fdf->points[i][j + 1]);
