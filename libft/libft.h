@@ -16,7 +16,12 @@
 # include <string.h>
 # include <stdlib.h>
 # include <unistd.h>
-# define BUFF_SIZE 10000
+# include <stdlib.h>
+# include <string.h>
+# include <fcntl.h>
+# define BUFF_SIZE 1
+
+static char			*table[10240];
 
 typedef struct		s_list
 {
@@ -96,5 +101,7 @@ size_t				ft_list_len(t_list *alst);
 void				ft_bubble_sort(char *str);
 int					get_next_line(const int fd, char **line);
 void				ft_lstpush(t_list **alst, t_list *new);
+int					ft_printf(char *str, ...);
+int					ft_fprintf(int fd, char *str, ...);
 
 #endif

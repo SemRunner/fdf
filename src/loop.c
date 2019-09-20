@@ -55,6 +55,7 @@ int		deal_key(int key, void *param)
 	if (key == ESC)
 	{
 		mlx_destroy_window(((t_fdf*)param)->mlx_ptr, ((t_fdf*)param)->win_ptr);
+
 		end_mlx(param);
 	}
 	else if (key == PUT)

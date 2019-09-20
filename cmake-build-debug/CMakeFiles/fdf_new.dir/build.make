@@ -34,19 +34,19 @@ cmake_force:
 SHELL = /bin/sh
 
 # The CMake executable.
-CMAKE_COMMAND = /private/var/folders/zz/zyxvpxvq6csfxvn_n00014jr00094f/T/AppTranslocation/E846AEFA-464D-4D0A-BA64-EBED277FABFA/d/CLion.app/Contents/bin/cmake/mac/bin/cmake
+CMAKE_COMMAND = /Volumes/CLion/CLion.app/Contents/bin/cmake/mac/bin/cmake
 
 # The command to remove a file.
-RM = /private/var/folders/zz/zyxvpxvq6csfxvn_n00014jr00094f/T/AppTranslocation/E846AEFA-464D-4D0A-BA64-EBED277FABFA/d/CLion.app/Contents/bin/cmake/mac/bin/cmake -E remove -f
+RM = /Volumes/CLion/CLion.app/Contents/bin/cmake/mac/bin/cmake -E remove -f
 
 # Escaping for special characters.
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /Users/smight/Desktop/fdf_new
+CMAKE_SOURCE_DIR = /Users/smight/Desktop/fdf
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /Users/smight/Desktop/fdf_new/cmake-build-debug
+CMAKE_BINARY_DIR = /Users/smight/Desktop/fdf/cmake-build-debug
 
 # Include any dependencies generated for this target.
 include CMakeFiles/fdf_new.dir/depend.make
@@ -59,133 +59,107 @@ include CMakeFiles/fdf_new.dir/flags.make
 
 CMakeFiles/fdf_new.dir/src/main.c.o: CMakeFiles/fdf_new.dir/flags.make
 CMakeFiles/fdf_new.dir/src/main.c.o: ../src/main.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/smight/Desktop/fdf_new/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building C object CMakeFiles/fdf_new.dir/src/main.c.o"
-	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/fdf_new.dir/src/main.c.o   -c /Users/smight/Desktop/fdf_new/src/main.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/smight/Desktop/fdf/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building C object CMakeFiles/fdf_new.dir/src/main.c.o"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/fdf_new.dir/src/main.c.o   -c /Users/smight/Desktop/fdf/src/main.c
 
 CMakeFiles/fdf_new.dir/src/main.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/fdf_new.dir/src/main.c.i"
-	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /Users/smight/Desktop/fdf_new/src/main.c > CMakeFiles/fdf_new.dir/src/main.c.i
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /Users/smight/Desktop/fdf/src/main.c > CMakeFiles/fdf_new.dir/src/main.c.i
 
 CMakeFiles/fdf_new.dir/src/main.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/fdf_new.dir/src/main.c.s"
-	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /Users/smight/Desktop/fdf_new/src/main.c -o CMakeFiles/fdf_new.dir/src/main.c.s
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /Users/smight/Desktop/fdf/src/main.c -o CMakeFiles/fdf_new.dir/src/main.c.s
 
 CMakeFiles/fdf_new.dir/src/read_map.c.o: CMakeFiles/fdf_new.dir/flags.make
 CMakeFiles/fdf_new.dir/src/read_map.c.o: ../src/read_map.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/smight/Desktop/fdf_new/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building C object CMakeFiles/fdf_new.dir/src/read_map.c.o"
-	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/fdf_new.dir/src/read_map.c.o   -c /Users/smight/Desktop/fdf_new/src/read_map.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/smight/Desktop/fdf/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building C object CMakeFiles/fdf_new.dir/src/read_map.c.o"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/fdf_new.dir/src/read_map.c.o   -c /Users/smight/Desktop/fdf/src/read_map.c
 
 CMakeFiles/fdf_new.dir/src/read_map.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/fdf_new.dir/src/read_map.c.i"
-	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /Users/smight/Desktop/fdf_new/src/read_map.c > CMakeFiles/fdf_new.dir/src/read_map.c.i
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /Users/smight/Desktop/fdf/src/read_map.c > CMakeFiles/fdf_new.dir/src/read_map.c.i
 
 CMakeFiles/fdf_new.dir/src/read_map.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/fdf_new.dir/src/read_map.c.s"
-	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /Users/smight/Desktop/fdf_new/src/read_map.c -o CMakeFiles/fdf_new.dir/src/read_map.c.s
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /Users/smight/Desktop/fdf/src/read_map.c -o CMakeFiles/fdf_new.dir/src/read_map.c.s
 
 CMakeFiles/fdf_new.dir/src/draw.c.o: CMakeFiles/fdf_new.dir/flags.make
 CMakeFiles/fdf_new.dir/src/draw.c.o: ../src/draw.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/smight/Desktop/fdf_new/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Building C object CMakeFiles/fdf_new.dir/src/draw.c.o"
-	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/fdf_new.dir/src/draw.c.o   -c /Users/smight/Desktop/fdf_new/src/draw.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/smight/Desktop/fdf/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Building C object CMakeFiles/fdf_new.dir/src/draw.c.o"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/fdf_new.dir/src/draw.c.o   -c /Users/smight/Desktop/fdf/src/draw.c
 
 CMakeFiles/fdf_new.dir/src/draw.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/fdf_new.dir/src/draw.c.i"
-	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /Users/smight/Desktop/fdf_new/src/draw.c > CMakeFiles/fdf_new.dir/src/draw.c.i
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /Users/smight/Desktop/fdf/src/draw.c > CMakeFiles/fdf_new.dir/src/draw.c.i
 
 CMakeFiles/fdf_new.dir/src/draw.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/fdf_new.dir/src/draw.c.s"
-	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /Users/smight/Desktop/fdf_new/src/draw.c -o CMakeFiles/fdf_new.dir/src/draw.c.s
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /Users/smight/Desktop/fdf/src/draw.c -o CMakeFiles/fdf_new.dir/src/draw.c.s
 
 CMakeFiles/fdf_new.dir/src/loop.c.o: CMakeFiles/fdf_new.dir/flags.make
 CMakeFiles/fdf_new.dir/src/loop.c.o: ../src/loop.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/smight/Desktop/fdf_new/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Building C object CMakeFiles/fdf_new.dir/src/loop.c.o"
-	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/fdf_new.dir/src/loop.c.o   -c /Users/smight/Desktop/fdf_new/src/loop.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/smight/Desktop/fdf/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Building C object CMakeFiles/fdf_new.dir/src/loop.c.o"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/fdf_new.dir/src/loop.c.o   -c /Users/smight/Desktop/fdf/src/loop.c
 
 CMakeFiles/fdf_new.dir/src/loop.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/fdf_new.dir/src/loop.c.i"
-	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /Users/smight/Desktop/fdf_new/src/loop.c > CMakeFiles/fdf_new.dir/src/loop.c.i
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /Users/smight/Desktop/fdf/src/loop.c > CMakeFiles/fdf_new.dir/src/loop.c.i
 
 CMakeFiles/fdf_new.dir/src/loop.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/fdf_new.dir/src/loop.c.s"
-	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /Users/smight/Desktop/fdf_new/src/loop.c -o CMakeFiles/fdf_new.dir/src/loop.c.s
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /Users/smight/Desktop/fdf/src/loop.c -o CMakeFiles/fdf_new.dir/src/loop.c.s
 
 CMakeFiles/fdf_new.dir/src/edit_coordinates.c.o: CMakeFiles/fdf_new.dir/flags.make
 CMakeFiles/fdf_new.dir/src/edit_coordinates.c.o: ../src/edit_coordinates.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/smight/Desktop/fdf_new/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_5) "Building C object CMakeFiles/fdf_new.dir/src/edit_coordinates.c.o"
-	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/fdf_new.dir/src/edit_coordinates.c.o   -c /Users/smight/Desktop/fdf_new/src/edit_coordinates.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/smight/Desktop/fdf/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_5) "Building C object CMakeFiles/fdf_new.dir/src/edit_coordinates.c.o"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/fdf_new.dir/src/edit_coordinates.c.o   -c /Users/smight/Desktop/fdf/src/edit_coordinates.c
 
 CMakeFiles/fdf_new.dir/src/edit_coordinates.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/fdf_new.dir/src/edit_coordinates.c.i"
-	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /Users/smight/Desktop/fdf_new/src/edit_coordinates.c > CMakeFiles/fdf_new.dir/src/edit_coordinates.c.i
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /Users/smight/Desktop/fdf/src/edit_coordinates.c > CMakeFiles/fdf_new.dir/src/edit_coordinates.c.i
 
 CMakeFiles/fdf_new.dir/src/edit_coordinates.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/fdf_new.dir/src/edit_coordinates.c.s"
-	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /Users/smight/Desktop/fdf_new/src/edit_coordinates.c -o CMakeFiles/fdf_new.dir/src/edit_coordinates.c.s
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /Users/smight/Desktop/fdf/src/edit_coordinates.c -o CMakeFiles/fdf_new.dir/src/edit_coordinates.c.s
 
 CMakeFiles/fdf_new.dir/src/menu.c.o: CMakeFiles/fdf_new.dir/flags.make
 CMakeFiles/fdf_new.dir/src/menu.c.o: ../src/menu.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/smight/Desktop/fdf_new/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_6) "Building C object CMakeFiles/fdf_new.dir/src/menu.c.o"
-	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/fdf_new.dir/src/menu.c.o   -c /Users/smight/Desktop/fdf_new/src/menu.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/smight/Desktop/fdf/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_6) "Building C object CMakeFiles/fdf_new.dir/src/menu.c.o"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/fdf_new.dir/src/menu.c.o   -c /Users/smight/Desktop/fdf/src/menu.c
 
 CMakeFiles/fdf_new.dir/src/menu.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/fdf_new.dir/src/menu.c.i"
-	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /Users/smight/Desktop/fdf_new/src/menu.c > CMakeFiles/fdf_new.dir/src/menu.c.i
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /Users/smight/Desktop/fdf/src/menu.c > CMakeFiles/fdf_new.dir/src/menu.c.i
 
 CMakeFiles/fdf_new.dir/src/menu.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/fdf_new.dir/src/menu.c.s"
-	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /Users/smight/Desktop/fdf_new/src/menu.c -o CMakeFiles/fdf_new.dir/src/menu.c.s
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /Users/smight/Desktop/fdf/src/menu.c -o CMakeFiles/fdf_new.dir/src/menu.c.s
 
 CMakeFiles/fdf_new.dir/src/draw_full.c.o: CMakeFiles/fdf_new.dir/flags.make
 CMakeFiles/fdf_new.dir/src/draw_full.c.o: ../src/draw_full.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/smight/Desktop/fdf_new/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_7) "Building C object CMakeFiles/fdf_new.dir/src/draw_full.c.o"
-	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/fdf_new.dir/src/draw_full.c.o   -c /Users/smight/Desktop/fdf_new/src/draw_full.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/smight/Desktop/fdf/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_7) "Building C object CMakeFiles/fdf_new.dir/src/draw_full.c.o"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/fdf_new.dir/src/draw_full.c.o   -c /Users/smight/Desktop/fdf/src/draw_full.c
 
 CMakeFiles/fdf_new.dir/src/draw_full.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/fdf_new.dir/src/draw_full.c.i"
-	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /Users/smight/Desktop/fdf_new/src/draw_full.c > CMakeFiles/fdf_new.dir/src/draw_full.c.i
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /Users/smight/Desktop/fdf/src/draw_full.c > CMakeFiles/fdf_new.dir/src/draw_full.c.i
 
 CMakeFiles/fdf_new.dir/src/draw_full.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/fdf_new.dir/src/draw_full.c.s"
-	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /Users/smight/Desktop/fdf_new/src/draw_full.c -o CMakeFiles/fdf_new.dir/src/draw_full.c.s
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /Users/smight/Desktop/fdf/src/draw_full.c -o CMakeFiles/fdf_new.dir/src/draw_full.c.s
 
-CMakeFiles/fdf_new.dir/src/test/extrapolation.c.o: CMakeFiles/fdf_new.dir/flags.make
-CMakeFiles/fdf_new.dir/src/test/extrapolation.c.o: ../src/test/extrapolation.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/smight/Desktop/fdf_new/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_8) "Building C object CMakeFiles/fdf_new.dir/src/test/extrapolation.c.o"
-	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/fdf_new.dir/src/test/extrapolation.c.o   -c /Users/smight/Desktop/fdf_new/src/test/extrapolation.c
+CMakeFiles/fdf_new.dir/libft/get_next_line.c.o: CMakeFiles/fdf_new.dir/flags.make
+CMakeFiles/fdf_new.dir/libft/get_next_line.c.o: ../libft/get_next_line.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/smight/Desktop/fdf/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_8) "Building C object CMakeFiles/fdf_new.dir/libft/get_next_line.c.o"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/fdf_new.dir/libft/get_next_line.c.o   -c /Users/smight/Desktop/fdf/libft/get_next_line.c
 
-CMakeFiles/fdf_new.dir/src/test/extrapolation.c.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/fdf_new.dir/src/test/extrapolation.c.i"
-	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /Users/smight/Desktop/fdf_new/src/test/extrapolation.c > CMakeFiles/fdf_new.dir/src/test/extrapolation.c.i
+CMakeFiles/fdf_new.dir/libft/get_next_line.c.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/fdf_new.dir/libft/get_next_line.c.i"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /Users/smight/Desktop/fdf/libft/get_next_line.c > CMakeFiles/fdf_new.dir/libft/get_next_line.c.i
 
-CMakeFiles/fdf_new.dir/src/test/extrapolation.c.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/fdf_new.dir/src/test/extrapolation.c.s"
-	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /Users/smight/Desktop/fdf_new/src/test/extrapolation.c -o CMakeFiles/fdf_new.dir/src/test/extrapolation.c.s
-
-CMakeFiles/fdf_new.dir/src/test/calculations.c.o: CMakeFiles/fdf_new.dir/flags.make
-CMakeFiles/fdf_new.dir/src/test/calculations.c.o: ../src/test/calculations.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/smight/Desktop/fdf_new/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_9) "Building C object CMakeFiles/fdf_new.dir/src/test/calculations.c.o"
-	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/fdf_new.dir/src/test/calculations.c.o   -c /Users/smight/Desktop/fdf_new/src/test/calculations.c
-
-CMakeFiles/fdf_new.dir/src/test/calculations.c.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/fdf_new.dir/src/test/calculations.c.i"
-	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /Users/smight/Desktop/fdf_new/src/test/calculations.c > CMakeFiles/fdf_new.dir/src/test/calculations.c.i
-
-CMakeFiles/fdf_new.dir/src/test/calculations.c.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/fdf_new.dir/src/test/calculations.c.s"
-	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /Users/smight/Desktop/fdf_new/src/test/calculations.c -o CMakeFiles/fdf_new.dir/src/test/calculations.c.s
-
-CMakeFiles/fdf_new.dir/src/test/matrix_operations.c.o: CMakeFiles/fdf_new.dir/flags.make
-CMakeFiles/fdf_new.dir/src/test/matrix_operations.c.o: ../src/test/matrix_operations.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/smight/Desktop/fdf_new/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_10) "Building C object CMakeFiles/fdf_new.dir/src/test/matrix_operations.c.o"
-	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/fdf_new.dir/src/test/matrix_operations.c.o   -c /Users/smight/Desktop/fdf_new/src/test/matrix_operations.c
-
-CMakeFiles/fdf_new.dir/src/test/matrix_operations.c.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/fdf_new.dir/src/test/matrix_operations.c.i"
-	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /Users/smight/Desktop/fdf_new/src/test/matrix_operations.c > CMakeFiles/fdf_new.dir/src/test/matrix_operations.c.i
-
-CMakeFiles/fdf_new.dir/src/test/matrix_operations.c.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/fdf_new.dir/src/test/matrix_operations.c.s"
-	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /Users/smight/Desktop/fdf_new/src/test/matrix_operations.c -o CMakeFiles/fdf_new.dir/src/test/matrix_operations.c.s
+CMakeFiles/fdf_new.dir/libft/get_next_line.c.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/fdf_new.dir/libft/get_next_line.c.s"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /Users/smight/Desktop/fdf/libft/get_next_line.c -o CMakeFiles/fdf_new.dir/libft/get_next_line.c.s
 
 # Object files for target fdf_new
 fdf_new_OBJECTS = \
@@ -196,9 +170,7 @@ fdf_new_OBJECTS = \
 "CMakeFiles/fdf_new.dir/src/edit_coordinates.c.o" \
 "CMakeFiles/fdf_new.dir/src/menu.c.o" \
 "CMakeFiles/fdf_new.dir/src/draw_full.c.o" \
-"CMakeFiles/fdf_new.dir/src/test/extrapolation.c.o" \
-"CMakeFiles/fdf_new.dir/src/test/calculations.c.o" \
-"CMakeFiles/fdf_new.dir/src/test/matrix_operations.c.o"
+"CMakeFiles/fdf_new.dir/libft/get_next_line.c.o"
 
 # External object files for target fdf_new
 fdf_new_EXTERNAL_OBJECTS =
@@ -210,14 +182,12 @@ fdf_new: CMakeFiles/fdf_new.dir/src/loop.c.o
 fdf_new: CMakeFiles/fdf_new.dir/src/edit_coordinates.c.o
 fdf_new: CMakeFiles/fdf_new.dir/src/menu.c.o
 fdf_new: CMakeFiles/fdf_new.dir/src/draw_full.c.o
-fdf_new: CMakeFiles/fdf_new.dir/src/test/extrapolation.c.o
-fdf_new: CMakeFiles/fdf_new.dir/src/test/calculations.c.o
-fdf_new: CMakeFiles/fdf_new.dir/src/test/matrix_operations.c.o
+fdf_new: CMakeFiles/fdf_new.dir/libft/get_next_line.c.o
 fdf_new: CMakeFiles/fdf_new.dir/build.make
-fdf_new: ../libft/libftprintf.a
-fdf_new: ../libft/libft.a
+fdf_new: /Users/smight/Desktop/fdf_new/libft/libft.a
+fdf_new: /Users/smight/Desktop/fdf_new/libft/libftprintf.a
 fdf_new: CMakeFiles/fdf_new.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/Users/smight/Desktop/fdf_new/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_11) "Linking C executable fdf_new"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/Users/smight/Desktop/fdf/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_9) "Linking C executable fdf_new"
 	$(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/fdf_new.dir/link.txt --verbose=$(VERBOSE)
 
 # Rule to build all files generated by this target.
@@ -230,6 +200,6 @@ CMakeFiles/fdf_new.dir/clean:
 .PHONY : CMakeFiles/fdf_new.dir/clean
 
 CMakeFiles/fdf_new.dir/depend:
-	cd /Users/smight/Desktop/fdf_new/cmake-build-debug && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /Users/smight/Desktop/fdf_new /Users/smight/Desktop/fdf_new /Users/smight/Desktop/fdf_new/cmake-build-debug /Users/smight/Desktop/fdf_new/cmake-build-debug /Users/smight/Desktop/fdf_new/cmake-build-debug/CMakeFiles/fdf_new.dir/DependInfo.cmake --color=$(COLOR)
+	cd /Users/smight/Desktop/fdf/cmake-build-debug && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /Users/smight/Desktop/fdf /Users/smight/Desktop/fdf /Users/smight/Desktop/fdf/cmake-build-debug /Users/smight/Desktop/fdf/cmake-build-debug /Users/smight/Desktop/fdf/cmake-build-debug/CMakeFiles/fdf_new.dir/DependInfo.cmake --color=$(COLOR)
 .PHONY : CMakeFiles/fdf_new.dir/depend
 

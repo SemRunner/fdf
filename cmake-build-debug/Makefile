@@ -39,19 +39,19 @@ cmake_force:
 SHELL = /bin/sh
 
 # The CMake executable.
-CMAKE_COMMAND = /private/var/folders/zz/zyxvpxvq6csfxvn_n00014jr00094f/T/AppTranslocation/E846AEFA-464D-4D0A-BA64-EBED277FABFA/d/CLion.app/Contents/bin/cmake/mac/bin/cmake
+CMAKE_COMMAND = /Volumes/CLion/CLion.app/Contents/bin/cmake/mac/bin/cmake
 
 # The command to remove a file.
-RM = /private/var/folders/zz/zyxvpxvq6csfxvn_n00014jr00094f/T/AppTranslocation/E846AEFA-464D-4D0A-BA64-EBED277FABFA/d/CLion.app/Contents/bin/cmake/mac/bin/cmake -E remove -f
+RM = /Volumes/CLion/CLion.app/Contents/bin/cmake/mac/bin/cmake -E remove -f
 
 # Escaping for special characters.
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /Users/smight/Desktop/fdf_new
+CMAKE_SOURCE_DIR = /Users/smight/Desktop/fdf
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /Users/smight/Desktop/fdf_new/cmake-build-debug
+CMAKE_BINARY_DIR = /Users/smight/Desktop/fdf/cmake-build-debug
 
 #=============================================================================
 # Targets provided globally by CMake.
@@ -59,7 +59,7 @@ CMAKE_BINARY_DIR = /Users/smight/Desktop/fdf_new/cmake-build-debug
 # Special rule for the target rebuild_cache
 rebuild_cache:
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Running CMake to regenerate build system..."
-	/private/var/folders/zz/zyxvpxvq6csfxvn_n00014jr00094f/T/AppTranslocation/E846AEFA-464D-4D0A-BA64-EBED277FABFA/d/CLion.app/Contents/bin/cmake/mac/bin/cmake -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR)
+	/Volumes/CLion/CLion.app/Contents/bin/cmake/mac/bin/cmake -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR)
 .PHONY : rebuild_cache
 
 # Special rule for the target rebuild_cache
@@ -70,7 +70,7 @@ rebuild_cache/fast: rebuild_cache
 # Special rule for the target edit_cache
 edit_cache:
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "No interactive CMake dialog available..."
-	/private/var/folders/zz/zyxvpxvq6csfxvn_n00014jr00094f/T/AppTranslocation/E846AEFA-464D-4D0A-BA64-EBED277FABFA/d/CLion.app/Contents/bin/cmake/mac/bin/cmake -E echo No\ interactive\ CMake\ dialog\ available.
+	/Volumes/CLion/CLion.app/Contents/bin/cmake/mac/bin/cmake -E echo No\ interactive\ CMake\ dialog\ available.
 .PHONY : edit_cache
 
 # Special rule for the target edit_cache
@@ -80,9 +80,9 @@ edit_cache/fast: edit_cache
 
 # The main all target
 all: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /Users/smight/Desktop/fdf_new/cmake-build-debug/CMakeFiles /Users/smight/Desktop/fdf_new/cmake-build-debug/CMakeFiles/progress.marks
+	$(CMAKE_COMMAND) -E cmake_progress_start /Users/smight/Desktop/fdf/cmake-build-debug/CMakeFiles /Users/smight/Desktop/fdf/cmake-build-debug/CMakeFiles/progress.marks
 	$(MAKE) -f CMakeFiles/Makefile2 all
-	$(CMAKE_COMMAND) -E cmake_progress_start /Users/smight/Desktop/fdf_new/cmake-build-debug/CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start /Users/smight/Desktop/fdf/cmake-build-debug/CMakeFiles 0
 .PHONY : all
 
 # The main clean target
@@ -122,6 +122,33 @@ fdf_new: cmake_check_build_system
 fdf_new/fast:
 	$(MAKE) -f CMakeFiles/fdf_new.dir/build.make CMakeFiles/fdf_new.dir/build
 .PHONY : fdf_new/fast
+
+libft/get_next_line.o: libft/get_next_line.c.o
+
+.PHONY : libft/get_next_line.o
+
+# target to build an object file
+libft/get_next_line.c.o:
+	$(MAKE) -f CMakeFiles/fdf_new.dir/build.make CMakeFiles/fdf_new.dir/libft/get_next_line.c.o
+.PHONY : libft/get_next_line.c.o
+
+libft/get_next_line.i: libft/get_next_line.c.i
+
+.PHONY : libft/get_next_line.i
+
+# target to preprocess a source file
+libft/get_next_line.c.i:
+	$(MAKE) -f CMakeFiles/fdf_new.dir/build.make CMakeFiles/fdf_new.dir/libft/get_next_line.c.i
+.PHONY : libft/get_next_line.c.i
+
+libft/get_next_line.s: libft/get_next_line.c.s
+
+.PHONY : libft/get_next_line.s
+
+# target to generate assembly for a file
+libft/get_next_line.c.s:
+	$(MAKE) -f CMakeFiles/fdf_new.dir/build.make CMakeFiles/fdf_new.dir/libft/get_next_line.c.s
+.PHONY : libft/get_next_line.c.s
 
 src/draw.o: src/draw.c.o
 
@@ -312,87 +339,6 @@ src/read_map.c.s:
 	$(MAKE) -f CMakeFiles/fdf_new.dir/build.make CMakeFiles/fdf_new.dir/src/read_map.c.s
 .PHONY : src/read_map.c.s
 
-src/test/calculations.o: src/test/calculations.c.o
-
-.PHONY : src/test/calculations.o
-
-# target to build an object file
-src/test/calculations.c.o:
-	$(MAKE) -f CMakeFiles/fdf_new.dir/build.make CMakeFiles/fdf_new.dir/src/test/calculations.c.o
-.PHONY : src/test/calculations.c.o
-
-src/test/calculations.i: src/test/calculations.c.i
-
-.PHONY : src/test/calculations.i
-
-# target to preprocess a source file
-src/test/calculations.c.i:
-	$(MAKE) -f CMakeFiles/fdf_new.dir/build.make CMakeFiles/fdf_new.dir/src/test/calculations.c.i
-.PHONY : src/test/calculations.c.i
-
-src/test/calculations.s: src/test/calculations.c.s
-
-.PHONY : src/test/calculations.s
-
-# target to generate assembly for a file
-src/test/calculations.c.s:
-	$(MAKE) -f CMakeFiles/fdf_new.dir/build.make CMakeFiles/fdf_new.dir/src/test/calculations.c.s
-.PHONY : src/test/calculations.c.s
-
-src/test/extrapolation.o: src/test/extrapolation.c.o
-
-.PHONY : src/test/extrapolation.o
-
-# target to build an object file
-src/test/extrapolation.c.o:
-	$(MAKE) -f CMakeFiles/fdf_new.dir/build.make CMakeFiles/fdf_new.dir/src/test/extrapolation.c.o
-.PHONY : src/test/extrapolation.c.o
-
-src/test/extrapolation.i: src/test/extrapolation.c.i
-
-.PHONY : src/test/extrapolation.i
-
-# target to preprocess a source file
-src/test/extrapolation.c.i:
-	$(MAKE) -f CMakeFiles/fdf_new.dir/build.make CMakeFiles/fdf_new.dir/src/test/extrapolation.c.i
-.PHONY : src/test/extrapolation.c.i
-
-src/test/extrapolation.s: src/test/extrapolation.c.s
-
-.PHONY : src/test/extrapolation.s
-
-# target to generate assembly for a file
-src/test/extrapolation.c.s:
-	$(MAKE) -f CMakeFiles/fdf_new.dir/build.make CMakeFiles/fdf_new.dir/src/test/extrapolation.c.s
-.PHONY : src/test/extrapolation.c.s
-
-src/test/matrix_operations.o: src/test/matrix_operations.c.o
-
-.PHONY : src/test/matrix_operations.o
-
-# target to build an object file
-src/test/matrix_operations.c.o:
-	$(MAKE) -f CMakeFiles/fdf_new.dir/build.make CMakeFiles/fdf_new.dir/src/test/matrix_operations.c.o
-.PHONY : src/test/matrix_operations.c.o
-
-src/test/matrix_operations.i: src/test/matrix_operations.c.i
-
-.PHONY : src/test/matrix_operations.i
-
-# target to preprocess a source file
-src/test/matrix_operations.c.i:
-	$(MAKE) -f CMakeFiles/fdf_new.dir/build.make CMakeFiles/fdf_new.dir/src/test/matrix_operations.c.i
-.PHONY : src/test/matrix_operations.c.i
-
-src/test/matrix_operations.s: src/test/matrix_operations.c.s
-
-.PHONY : src/test/matrix_operations.s
-
-# target to generate assembly for a file
-src/test/matrix_operations.c.s:
-	$(MAKE) -f CMakeFiles/fdf_new.dir/build.make CMakeFiles/fdf_new.dir/src/test/matrix_operations.c.s
-.PHONY : src/test/matrix_operations.c.s
-
 # Help Target
 help:
 	@echo "The following are some of the valid targets for this Makefile:"
@@ -402,6 +348,9 @@ help:
 	@echo "... rebuild_cache"
 	@echo "... edit_cache"
 	@echo "... fdf_new"
+	@echo "... libft/get_next_line.o"
+	@echo "... libft/get_next_line.i"
+	@echo "... libft/get_next_line.s"
 	@echo "... src/draw.o"
 	@echo "... src/draw.i"
 	@echo "... src/draw.s"
@@ -423,15 +372,6 @@ help:
 	@echo "... src/read_map.o"
 	@echo "... src/read_map.i"
 	@echo "... src/read_map.s"
-	@echo "... src/test/calculations.o"
-	@echo "... src/test/calculations.i"
-	@echo "... src/test/calculations.s"
-	@echo "... src/test/extrapolation.o"
-	@echo "... src/test/extrapolation.i"
-	@echo "... src/test/extrapolation.s"
-	@echo "... src/test/matrix_operations.o"
-	@echo "... src/test/matrix_operations.i"
-	@echo "... src/test/matrix_operations.s"
 .PHONY : help
 
 

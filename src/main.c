@@ -35,6 +35,7 @@ void	end_mlx(t_fdf *fdf)
 {
 	mlx_destroy_image(fdf->mlx_ptr, fdf->img_ptr);//чищу имейдж
 	//mlx_destroy_window(fdf->mlx_ptr, fdf->win_ptr);//чищу окно ????почему сега????
+
 	exit(0);
 }
 
@@ -44,7 +45,7 @@ int		main(int c, char **v)
 
 	if (c != 2)
 		return (error(1));
-	if (!read_map(&fdf, v[1]))//читаю мапу и заполняю массив
+	if (!read_map(&fdf, v[1]))
 		return (error(2));
 	fdf.height_coeff = 1;
 	fdf.min_height = 1;
@@ -52,7 +53,7 @@ int		main(int c, char **v)
 	get_color_palette(&fdf);
 	initialize_mlx(&fdf, v[1]);
 	loop(&fdf);
-	end_mlx(&fdf);
+	//end_mlx(&fdf);
 	//ft_memdel((void**)&fdf.source_map);
 	return (0);
 }

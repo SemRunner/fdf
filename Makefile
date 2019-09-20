@@ -6,9 +6,7 @@ FILES = main.c \
         draw.c \
         edit_coordinates.c \
         menu.c \
-        draw_full.c \
-        test/calculations.c \
-        test/extrapolation.c
+        draw_full.c
 
 SRC = $(addprefix src/,$(FILES))
 
@@ -22,7 +20,7 @@ FLAGS =
 
 all : $(NAME)
 
-$(NAME) : $(OBJ)
+$(NAME) : $(OBJ) inc
 	@make -C libft/
 	@gcc -o $(NAME) $(OBJ) $(LIB) $(LIB2) -lmlx -framework OpenGL -framework AppKit
 

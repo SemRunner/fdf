@@ -12,6 +12,8 @@
 
 #include "libft.h"
 
+static char	*table[10240];
+
 static int	ft_check_chars(char *s, int len)
 {
 	while (len--)
@@ -84,7 +86,6 @@ int			get_line(char **str)
 
 int			get_next_line(const int fd, char **line)
 {
-	static char	*table[10240];
 	char		*res;
 	int			a;
 

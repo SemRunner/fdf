@@ -6,11 +6,11 @@
 
 #IncludeRegexTransform: 
 
-/Users/smight/Desktop/fdf_new/inc/fdf.h
+/Users/smight/Desktop/fdf/inc/fdf.h
 ../libft/libft.h
-/Users/smight/Desktop/fdf_new/libft/libft.h
+/Users/smight/Desktop/fdf/libft/libft.h
 ../minilibx_macos/mlx.h
-/Users/smight/Desktop/fdf_new/minilibx_macos/mlx.h
+/Users/smight/Desktop/fdf/minilibx_macos/mlx.h
 stdio.h
 -
 fcntl.h
@@ -18,17 +18,23 @@ fcntl.h
 math.h
 -
 
-/Users/smight/Desktop/fdf_new/libft/libft.h
+/Users/smight/Desktop/fdf/libft/libft.h
 string.h
 -
 stdlib.h
 -
 unistd.h
 -
+stdlib.h
+-
+string.h
+-
+fcntl.h
+-
 
-/Users/smight/Desktop/fdf_new/minilibx_macos/mlx.h
+/Users/smight/Desktop/fdf/minilibx_macos/mlx.h
 
-/Users/smight/Desktop/fdf_new/src/draw.c
+/Users/smight/Desktop/fdf/src/read_map.c
 ../inc/fdf.h
-/Users/smight/Desktop/fdf_new/inc/fdf.h
+/Users/smight/Desktop/fdf/inc/fdf.h
 

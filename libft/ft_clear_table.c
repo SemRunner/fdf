@@ -12,15 +12,18 @@
 
 #include "libft.h"
 
-void	*ft_clear_table(char **table, int i)
+void	*ft_clear_table(char **tables, int i)
 {
 	int index;
 
 	index = 0;
+	if (!tables)
+		return (NULL);
 	while (index < i)
 	{
-		ft_memdel((void**)&table[index++]);
+		ft_memdel((void**)&tables[index]);
+		index++;
 	}
-	ft_memdel((void**)&table);
-	return (0);
+	ft_memdel((void**)&tables);
+	return (NULL);
 }

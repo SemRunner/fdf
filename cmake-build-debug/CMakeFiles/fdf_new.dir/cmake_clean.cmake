@@ -6,9 +6,7 @@ file(REMOVE_RECURSE
   "CMakeFiles/fdf_new.dir/src/edit_coordinates.c.o"
   "CMakeFiles/fdf_new.dir/src/menu.c.o"
   "CMakeFiles/fdf_new.dir/src/draw_full.c.o"
-  "CMakeFiles/fdf_new.dir/src/test/extrapolation.c.o"
-  "CMakeFiles/fdf_new.dir/src/test/calculations.c.o"
-  "CMakeFiles/fdf_new.dir/src/test/matrix_operations.c.o"
+  "CMakeFiles/fdf_new.dir/libft/get_next_line.c.o"
   "fdf_new.pdb"
   "fdf_new"
 )

@@ -6,5 +6,5 @@ C_FLAGS =  -lmlx -framework OpenGL -framework AppKit -g   -std=gnu11
 
 C_DEFINES = 
 
-C_INCLUDES = -I/Users/smight/Desktop/fdf_new/inc -I/Users/smight/Desktop/fdf_new/libft 
+C_INCLUDES = -I/Users/smight/Desktop/fdf/inc -I/Users/smight/Desktop/fdf/libft 
 
