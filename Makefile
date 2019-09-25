@@ -12,6 +12,8 @@ SRC = $(addprefix src/,$(FILES))
 
 OBJ = $(addprefix obj/,$(FILES:.c=.o))
 
+INC = inc/fdf.h
+
 LIB = libft/libft.a
 
 LIB2 = libft/libftprintf.a
@@ -20,11 +22,11 @@ FLAGS =
 
 all : $(NAME)
 
-$(NAME) : $(OBJ) inc
+$(NAME) : $(OBJ)
 	@make -C libft/
 	@gcc -o $(NAME) $(OBJ) $(LIB) $(LIB2) -lmlx -framework OpenGL -framework AppKit
 
-obj/%.o: src/%.c
+obj/%.o: src/%.c $(INC)
 	@mkdir -p obj/
 	@gcc $(FLAGS) -Iinc -o $@ -c $<
 
